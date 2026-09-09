@@ -13,14 +13,14 @@
     "svelte": "^5.57.0"
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^4.0.0-next.6",
+    "@sveltejs/vite-plugin-svelte": "^7.3.0",
     "@tsconfig/svelte": "^5.0.2",
     "@types/chrome": "^0.0.281",
     "fake-indexeddb": "^6.0.0",
     "jsdom": "^25.0.1",
     "svelte-check": "^3.8.6",
     "typescript": "^5.3.3",
-    "vite": "^5.1.6",
-    "vitest": "^2.1.8"
+    "vite": "^8.2.2",
+    "vitest": "^5.0.0"
   }
 }
