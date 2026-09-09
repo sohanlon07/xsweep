@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Tweet Cleaner",
+  "version": "0.1.0",
+  "description": "Local, review-first cleanup of your own X posts, reposts, and likes.",
+  "action": { "default_title": "Open Tweet Cleaner" },
+  "background": { "service_worker": "background.js", "type": "module" },
+  "permissions": ["storage", "tabs", "notifications"],
+  "host_permissions": ["https://x.com/*", "https://twitter.com/*"],
+  "content_scripts": [{ "matches": ["https://x.com/*", "https://twitter.com/*"], "js": ["content.js"], "run_at": "document_idle" }]
+}
