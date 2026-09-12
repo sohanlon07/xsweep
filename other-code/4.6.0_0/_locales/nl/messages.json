@@ -1,0 +1,368 @@
+{
+   "archiveApplyFilterButton": {
+      "message": "Filteren"
+   },
+   "archiveButtonLabel": {
+      "message": "Archief"
+   },
+   "archiveClearButton": {
+      "message": "Wissen"
+   },
+   "archiveClearConfirmMessage": {
+      "message": "Hiermee worden alle geselecteerde wachtende archiefrecords uit IndexedDB verwijderd. Doorgaan?"
+   },
+   "archiveClearConfirmTitle": {
+      "message": "Waarschuwing"
+   },
+   "archiveClearTooltip": {
+      "message": "Alle geselecteerde wachtende records uit de wachtrij verwijderen."
+   },
+   "archiveDeleteButton": {
+      "message": "Verwijderen"
+   },
+   "archiveDeleteTooltip": {
+      "message": "Alle geselecteerde wachtende records in archiefmodus verwijderen."
+   },
+   "archiveErrorFileNotReadable": {
+      "message": "Bestand \"$1\" kon niet worden gelezen. Selecteer opnieuw. Upload bij grote ZIP-bestanden de .js-bestanden direct."
+   },
+   "archiveErrorInvalidPayload": {
+      "message": "Inhoud van het archiefbestand is ongeldig."
+   },
+   "archiveErrorNoSupportedFiles": {
+      "message": "Geen ondersteunde archiefbestanden in het zip-pakket gevonden."
+   },
+   "archiveErrorNoValidRecords": {
+      "message": "Geen geldige archiefrecords gevonden."
+   },
+   "archiveErrorUnsupportedFile": {
+      "message": "Niet-ondersteund archiefbestand: $1"
+   },
+   "archiveFilterDatePlaceholder": {
+      "message": "Optioneel"
+   },
+   "archiveFilterFrom": {
+      "message": "Van"
+   },
+   "archiveFilterKeyword": {
+      "message": "Trefwoord"
+   },
+   "archiveFilterKeywordPlaceholder": {
+      "message": "Inhoud zoeken"
+   },
+   "archiveFilterTip": {
+      "message": "Like-records ondersteunen meestal alleen filteren op trefwoord."
+   },
+   "archiveFilterTo": {
+      "message": "Tot"
+   },
+   "archiveFilterType": {
+      "message": "Type"
+   },
+   "archiveFiltersSection": {
+      "message": "Filters"
+   },
+   "archiveImportButton": {
+      "message": "Importeren"
+   },
+   "archiveImportDescription": {
+      "message": "Ondersteunt officiële zip, tweets.js en like.js. Als er al openstaande records zijn, kun je samenvoegen of ze vóór het importeren wissen."
+   },
+   "archiveImportFailed": {
+      "message": "Importeren mislukt"
+   },
+   "archiveImportModeMerge": {
+      "message": "Samenvoegen"
+   },
+   "archiveImportModeMessage": {
+      "message": "Er zijn al openstaande records. Eerst wissen of samenvoegen met de nieuwe import?"
+   },
+   "archiveImportModeReplace": {
+      "message": "Wissen & Importeren"
+   },
+   "archiveImportModeTitle": {
+      "message": "Importmodus"
+   },
+   "archiveImportResult": {
+      "message": "$1 geïmporteerd, $2 duplicaten overgeslagen, $3 ongeldig."
+   },
+   "archiveImportSection": {
+      "message": "Bestanden importeren"
+   },
+   "archiveLoaderDeleted": {
+      "message": "Verwijderd"
+   },
+   "archiveLoaderPending": {
+      "message": "In wachtrij"
+   },
+   "archiveLoaderRecentDeleted": {
+      "message": "Onlangs verwijderd"
+   },
+   "archiveLoaderRunning": {
+      "message": "Archiefmodus van DeleteTweets is actief..."
+   },
+   "archiveLoaderSkipped": {
+      "message": "Overgeslagen"
+   },
+   "archiveLoginReady": {
+      "message": "Aangemeld bij X"
+   },
+   "archiveLoginRequired": {
+      "message": "Aanmelding bij X vereist"
+   },
+   "archivePageHeading": {
+      "message": "Archiefbeheer"
+   },
+   "archivePageSubtitle": {
+      "message": "Bestaande wachtrij laden, officiële archiefbestanden importeren en geselecteerde items in archiefmodus verwijderen."
+   },
+   "archivePageTitle": {
+      "message": "Archiefbeheer"
+   },
+   "archivePendingSection": {
+      "message": "Wachtende records"
+   },
+   "archiveProgressExtracting": {
+      "message": "$1 wordt uitgepakt ($2/$3)..."
+   },
+   "archiveProgressParsing": {
+      "message": "Verwerken... $1 MB / $2 MB"
+   },
+   "archiveProgressReadingZip": {
+      "message": "ZIP-directory lezen..."
+   },
+   "archiveRefreshButton": {
+      "message": "Vernieuwen"
+   },
+   "archiveResetButton": {
+      "message": "Reset"
+   },
+   "archiveSelectFilteredButton": {
+      "message": "Selecteren"
+   },
+   "archiveSelectFilteredSuccess": {
+      "message": "$1 records geselecteerd."
+   },
+   "archiveSelectionUpdateFailed": {
+      "message": "Bijwerken selectie mislukt"
+   },
+   "archiveStartDeleteNeedLogin": {
+      "message": "Meld eerst aan bij X."
+   },
+   "archiveStartDeleteNeedSelection": {
+      "message": "Selecteer wachtende records voor het starten."
+   },
+   "archiveSummaryLike": {
+      "message": "Like"
+   },
+   "archiveSummaryPending": {
+      "message": "In wachtrij"
+   },
+   "archiveSummaryReply": {
+      "message": "Reactie"
+   },
+   "archiveSummaryRetweet": {
+      "message": "Retweet"
+   },
+   "archiveSummarySelected": {
+      "message": "Geselecteerd"
+   },
+   "archiveSummaryTweet": {
+      "message": "Tweet"
+   },
+   "archiveTableContent": {
+      "message": "Inhoud"
+   },
+   "archiveTableCreated": {
+      "message": "Aangemaakt"
+   },
+   "archiveTableEmpty": {
+      "message": "Geen wachtende archiefrecords"
+   },
+   "archiveTableEmptyContent": {
+      "message": "(leeg)"
+   },
+   "archiveTableFails": {
+      "message": "Mislukkingen"
+   },
+   "archiveTablePick": {
+      "message": "Kies"
+   },
+   "archiveTableTweetId": {
+      "message": "Tweet-ID"
+   },
+   "archiveTableType": {
+      "message": "Type"
+   },
+   "archiveUnselectFilteredButton": {
+      "message": "Deselecteren"
+   },
+   "archiveUnselectFilteredSuccess": {
+      "message": "$1 records gedeselecteerd."
+   },
+   "bindlicense": {
+      "message": "Licentie koppelen"
+   },
+   "clicklogin": {
+      "message": "Log in bij Twitter om door te gaan"
+   },
+   "deleteAll": {
+      "message": "Alles verwijderen"
+   },
+   "deleteByCondition": {
+      "message": "Verwijderen op voorwaarde"
+   },
+   "exceptionPlaceholder": {
+      "message": "Tweets met deze trefwoorden worden niet verwijderd"
+   },
+   "exceptionSetting": {
+      "message": "Uitzonderingsinstellingen"
+   },
+   "exceptionTips": {
+      "message": "Uitzondering (Voer trefwoorden in, gescheiden door ';')"
+   },
+   "exportBackup": {
+      "message": "Back-up exporteren"
+   },
+   "exportDeleted": {
+      "message": "Verwijderde exporteren"
+   },
+   "exportProUser": {
+      "message": "Exporteren (Pro-gebruiker)"
+   },
+   "extensionDescription": {
+      "message": "Verwijder tweets/retweets/reacties/likes met één klik"
+   },
+   "filterConditions": {
+      "message": "Filtervoorwaarden"
+   },
+   "keywords": {
+      "message": "Trefwoorden"
+   },
+   "licenseShort": {
+      "message": "Licentie"
+   },
+   "licenseexpired": {
+      "message": "Licentie verlopen"
+   },
+   "loadingText": {
+      "message": "Laden..."
+   },
+   "message_bindfail": {
+      "message": "Koppelen mislukt"
+   },
+   "message_bindsuccess": {
+      "message": "Succesvol gekoppeld"
+   },
+   "message_incorrect_input": {
+      "message": "Ongeldige invoer"
+   },
+   "message_license_expired": {
+      "message": "De licentie die je hebt ingevoerd is verlopen!"
+   },
+   "message_license_invalid": {
+      "message": "De licentie is ongeldig"
+   },
+   "message_live_daily_limit_reached": {
+      "message": "Gratis gebruikers kunnen maximaal 50 items per dag verwijderen. De limiet voor vandaag is bereikt."
+   },
+   "message_networkerror": {
+      "message": "Netwerkfout. Probeer het later opnieuw"
+   },
+   "message_not_export": {
+      "message": "Er zijn momenteel geen gegevens beschikbaar om te exporteren"
+   },
+   "message_notbackup": {
+      "message": "Je hebt nog geen back-up van je tweets gemaakt"
+   },
+   "message_notpermission": {
+      "message": "Je hebt geen toestemming voor deze actie"
+   },
+   "message_right_timeformat": {
+      "message": "Voer een geldig tijdformaat in, bijvoorbeeld: 2023-01-01 00:00:00"
+   },
+   "message_select_search": {
+      "message": "Selecteer minstens één zoekvoorwaarde"
+   },
+   "message_select_type_tweet": {
+      "message": "Selecteer het type tweets om te verwijderen"
+   },
+   "message_starttime_endtime": {
+      "message": "Starttijd moet voor eindtijd liggen"
+   },
+   "message_upgrade_to_pro": {
+      "message": "Upgrade naar een Pro-account om deze functies te gebruiken"
+   },
+   "optionsLikes": {
+      "message": "Likes"
+   },
+   "optionsReplys": {
+      "message": "Reacties"
+   },
+   "optionsRetweets": {
+      "message": "Retweets"
+   },
+   "optionsTweets": {
+      "message": "Tweets"
+   },
+   "pleaseEnterKeywords": {
+      "message": "Voer trefwoorden in"
+   },
+   "promptCancel": {
+      "message": "Annuleren"
+   },
+   "promptConfirm": {
+      "message": "Bevestigen"
+   },
+   "promptEnterLicense": {
+      "message": "Voer licentie in"
+   },
+   "promptLicenseTitle": {
+      "message": "Licentie"
+   },
+   "rebindlicense": {
+      "message": "Licentie opnieuw koppelen"
+   },
+   "recordTypeLike": {
+      "message": "Like"
+   },
+   "recordTypeReply": {
+      "message": "Reactie"
+   },
+   "recordTypeRetweet": {
+      "message": "Retweet"
+   },
+   "recordTypeTweet": {
+      "message": "Tweet"
+   },
+   "selecttweettype": {
+      "message": "Selecteer het type tweets om te verwijderen"
+   },
+   "startBackup": {
+      "message": "Back-up maken"
+   },
+   "startDelete": {
+      "message": "Starten"
+   },
+   "timeFrom": {
+      "message": "Van"
+   },
+   "timeTo": {
+      "message": "Tot"
+   },
+   "tweetInfoDomForward": {
+      "message": "Doorsturen"
+   },
+   "tweetInfoDomLikes": {
+      "message": "Likes"
+   },
+   "tweetInfoDomReply": {
+      "message": "Reactie"
+   },
+   "upgradeShort": {
+      "message": "Upgraden"
+   },
+   "upgradetoPro": {
+      "message": "Upgraden naar Pro"
+   }
+}

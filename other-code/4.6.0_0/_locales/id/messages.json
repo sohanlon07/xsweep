@@ -1,0 +1,368 @@
+{
+   "archiveApplyFilterButton": {
+      "message": "Filter"
+   },
+   "archiveButtonLabel": {
+      "message": "Arsip"
+   },
+   "archiveClearButton": {
+      "message": "Bersihkan"
+   },
+   "archiveClearConfirmMessage": {
+      "message": "Ini akan menghapus semua catatan arsip terpilih dari IndexedDB. Lanjutkan?"
+   },
+   "archiveClearConfirmTitle": {
+      "message": "Peringatan"
+   },
+   "archiveClearTooltip": {
+      "message": "Hapus semua catatan terpilih dari antrean."
+   },
+   "archiveDeleteButton": {
+      "message": "Hapus"
+   },
+   "archiveDeleteTooltip": {
+      "message": "Hapus semua catatan terpilih dalam mode arsip."
+   },
+   "archiveErrorFileNotReadable": {
+      "message": "Gagal membaca file \"$1\". Silakan pilih ulang. Untuk ZIP besar, unggah langsung file .js."
+   },
+   "archiveErrorInvalidPayload": {
+      "message": "Konten file arsip tidak valid."
+   },
+   "archiveErrorNoSupportedFiles": {
+      "message": "Tidak ada file arsip yang didukung dalam zip."
+   },
+   "archiveErrorNoValidRecords": {
+      "message": "Tidak ditemukan catatan arsip yang valid."
+   },
+   "archiveErrorUnsupportedFile": {
+      "message": "File arsip tidak didukung: $1"
+   },
+   "archiveFilterDatePlaceholder": {
+      "message": "Opsional"
+   },
+   "archiveFilterFrom": {
+      "message": "Dari"
+   },
+   "archiveFilterKeyword": {
+      "message": "Kata kunci"
+   },
+   "archiveFilterKeywordPlaceholder": {
+      "message": "Cari di konten"
+   },
+   "archiveFilterTip": {
+      "message": "Catatan suka biasanya hanya mendukung filter kata kunci."
+   },
+   "archiveFilterTo": {
+      "message": "Sampai"
+   },
+   "archiveFilterType": {
+      "message": "Jenis"
+   },
+   "archiveFiltersSection": {
+      "message": "Filter"
+   },
+   "archiveImportButton": {
+      "message": "Impor"
+   },
+   "archiveImportDescription": {
+      "message": "Mendukung zip resmi, tweets.js, dan like.js. Jika ada catatan tertunda, Anda bisa memilih menggabungkan atau menghapusnya sebelum impor."
+   },
+   "archiveImportFailed": {
+      "message": "Impor gagal"
+   },
+   "archiveImportModeMerge": {
+      "message": "Gabungkan"
+   },
+   "archiveImportModeMessage": {
+      "message": "Ditemukan catatan tertunda. Hapus dulu atau gabungkan dengan impor baru?"
+   },
+   "archiveImportModeReplace": {
+      "message": "Hapus & Impor"
+   },
+   "archiveImportModeTitle": {
+      "message": "Mode Impor"
+   },
+   "archiveImportResult": {
+      "message": "Diimpor $1, duplikat dilewati $2, tidak valid $3."
+   },
+   "archiveImportSection": {
+      "message": "Impor File"
+   },
+   "archiveLoaderDeleted": {
+      "message": "Dihapus"
+   },
+   "archiveLoaderPending": {
+      "message": "Menunggu"
+   },
+   "archiveLoaderRecentDeleted": {
+      "message": "Baru dihapus"
+   },
+   "archiveLoaderRunning": {
+      "message": "Mode arsip DeleteTweets sedang berjalan..."
+   },
+   "archiveLoaderSkipped": {
+      "message": "Dilewati"
+   },
+   "archiveLoginReady": {
+      "message": "Sudah masuk X"
+   },
+   "archiveLoginRequired": {
+      "message": "Perlu masuk X"
+   },
+   "archivePageHeading": {
+      "message": "Pengelola Arsip"
+   },
+   "archivePageSubtitle": {
+      "message": "Muat antrean pending yang ada, impor file arsip resmi, dan hapus item yang dipilih dalam mode arsip."
+   },
+   "archivePageTitle": {
+      "message": "Pengelola Arsip"
+   },
+   "archivePendingSection": {
+      "message": "Catatan menunggu"
+   },
+   "archiveProgressExtracting": {
+      "message": "Mengekstrak $1 ($2/$3)..."
+   },
+   "archiveProgressParsing": {
+      "message": "Mengurai... $1 MB / $2 MB"
+   },
+   "archiveProgressReadingZip": {
+      "message": "Membaca direktori ZIP..."
+   },
+   "archiveRefreshButton": {
+      "message": "Segarkan"
+   },
+   "archiveResetButton": {
+      "message": "Atur ulang"
+   },
+   "archiveSelectFilteredButton": {
+      "message": "Pilih"
+   },
+   "archiveSelectFilteredSuccess": {
+      "message": "$1 catatan dipilih."
+   },
+   "archiveSelectionUpdateFailed": {
+      "message": "Gagal memperbarui pilihan"
+   },
+   "archiveStartDeleteNeedLogin": {
+      "message": "Silakan masuk X terlebih dahulu."
+   },
+   "archiveStartDeleteNeedSelection": {
+      "message": "Pilih catatan menunggu sebelum memulai."
+   },
+   "archiveSummaryLike": {
+      "message": "Suka"
+   },
+   "archiveSummaryPending": {
+      "message": "Menunggu"
+   },
+   "archiveSummaryReply": {
+      "message": "Balasan"
+   },
+   "archiveSummaryRetweet": {
+      "message": "Retweet"
+   },
+   "archiveSummarySelected": {
+      "message": "Terpilih"
+   },
+   "archiveSummaryTweet": {
+      "message": "Tweet"
+   },
+   "archiveTableContent": {
+      "message": "Konten"
+   },
+   "archiveTableCreated": {
+      "message": "Dibuat"
+   },
+   "archiveTableEmpty": {
+      "message": "Tidak ada catatan arsip menunggu"
+   },
+   "archiveTableEmptyContent": {
+      "message": "(kosong)"
+   },
+   "archiveTableFails": {
+      "message": "Gagal"
+   },
+   "archiveTablePick": {
+      "message": "Pilih"
+   },
+   "archiveTableTweetId": {
+      "message": "ID Tweet"
+   },
+   "archiveTableType": {
+      "message": "Jenis"
+   },
+   "archiveUnselectFilteredButton": {
+      "message": "Batal pilih"
+   },
+   "archiveUnselectFilteredSuccess": {
+      "message": "$1 catatan dibatalkan."
+   },
+   "bindlicense": {
+      "message": "Tautkan lisensi"
+   },
+   "clicklogin": {
+      "message": "Masuk ke Twitter untuk melanjutkan"
+   },
+   "deleteAll": {
+      "message": "Hapus semua"
+   },
+   "deleteByCondition": {
+      "message": "Hapus berdasarkan kondisi"
+   },
+   "exceptionPlaceholder": {
+      "message": "Tweet yang berisi kata kunci ini tidak akan dihapus"
+   },
+   "exceptionSetting": {
+      "message": "Pengaturan pengecualian"
+   },
+   "exceptionTips": {
+      "message": "Pengecualian (Masukkan kata kunci yang dipisahkan dengan ';')"
+   },
+   "exportBackup": {
+      "message": "Ekspor cadangan"
+   },
+   "exportDeleted": {
+      "message": "Ekspor yang dihapus"
+   },
+   "exportProUser": {
+      "message": "Ekspor (Pengguna Pro)"
+   },
+   "extensionDescription": {
+      "message": "Hapus tweet/retweet/balasan/suka dengan satu klik"
+   },
+   "filterConditions": {
+      "message": "Kondisi filter"
+   },
+   "keywords": {
+      "message": "Kata kunci"
+   },
+   "licenseShort": {
+      "message": "Lisensi"
+   },
+   "licenseexpired": {
+      "message": "Lisensi kedaluwarsa"
+   },
+   "loadingText": {
+      "message": "Memuat..."
+   },
+   "message_bindfail": {
+      "message": "Gagal menautkan"
+   },
+   "message_bindsuccess": {
+      "message": "Berhasil ditautkan"
+   },
+   "message_incorrect_input": {
+      "message": "Input tidak benar"
+   },
+   "message_license_expired": {
+      "message": "Lisensi yang Anda masukkan telah kedaluwarsa!"
+   },
+   "message_license_invalid": {
+      "message": "Lisensi tidak valid"
+   },
+   "message_live_daily_limit_reached": {
+      "message": "Pengguna gratis dapat menghapus hingga 50 item per hari. Batas untuk hari ini telah tercapai."
+   },
+   "message_networkerror": {
+      "message": "Kesalahan jaringan. Coba lagi nanti"
+   },
+   "message_not_export": {
+      "message": "Saat ini tidak ada data yang dapat diekspor"
+   },
+   "message_notbackup": {
+      "message": "Anda belum mencadangkan tweet"
+   },
+   "message_notpermission": {
+      "message": "Tidak ada izin untuk melakukan operasi ini"
+   },
+   "message_right_timeformat": {
+      "message": "Masukkan format waktu yang valid, misalnya: 2023-01-01 00:00:00"
+   },
+   "message_select_search": {
+      "message": "Pilih setidaknya satu kondisi pencarian"
+   },
+   "message_select_type_tweet": {
+      "message": "Silakan pilih jenis tweet yang akan dihapus"
+   },
+   "message_starttime_endtime": {
+      "message": "Waktu mulai harus lebih awal dari waktu selesai"
+   },
+   "message_upgrade_to_pro": {
+      "message": "Upgrade ke akun Pro untuk mengakses fitur ini"
+   },
+   "optionsLikes": {
+      "message": "Suka"
+   },
+   "optionsReplys": {
+      "message": "Balasan"
+   },
+   "optionsRetweets": {
+      "message": "Retweet"
+   },
+   "optionsTweets": {
+      "message": "Tweet"
+   },
+   "pleaseEnterKeywords": {
+      "message": "Masukkan kata kunci"
+   },
+   "promptCancel": {
+      "message": "Batal"
+   },
+   "promptConfirm": {
+      "message": "Konfirmasi"
+   },
+   "promptEnterLicense": {
+      "message": "Masukkan lisensi"
+   },
+   "promptLicenseTitle": {
+      "message": "Lisensi"
+   },
+   "rebindlicense": {
+      "message": "Tautkan ulang lisensi"
+   },
+   "recordTypeLike": {
+      "message": "Suka"
+   },
+   "recordTypeReply": {
+      "message": "Balasan"
+   },
+   "recordTypeRetweet": {
+      "message": "Retweet"
+   },
+   "recordTypeTweet": {
+      "message": "Tweet"
+   },
+   "selecttweettype": {
+      "message": "Pilih jenis tweet yang akan dihapus"
+   },
+   "startBackup": {
+      "message": "Cadangkan"
+   },
+   "startDelete": {
+      "message": "Mulai"
+   },
+   "timeFrom": {
+      "message": "Dari"
+   },
+   "timeTo": {
+      "message": "Hingga"
+   },
+   "tweetInfoDomForward": {
+      "message": "Teruskan"
+   },
+   "tweetInfoDomLikes": {
+      "message": "Suka"
+   },
+   "tweetInfoDomReply": {
+      "message": "Balasan"
+   },
+   "upgradeShort": {
+      "message": "Upgrade"
+   },
+   "upgradetoPro": {
+      "message": "Upgrade ke Pro"
+   }
+}

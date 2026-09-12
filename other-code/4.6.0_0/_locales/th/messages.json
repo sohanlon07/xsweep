@@ -1,0 +1,368 @@
+{
+   "archiveApplyFilterButton": {
+      "message": "กรอง"
+   },
+   "archiveButtonLabel": {
+      "message": "อาร์ไคฟ์"
+   },
+   "archiveClearButton": {
+      "message": "ล้าง"
+   },
+   "archiveClearConfirmMessage": {
+      "message": "การดำเนินการนี้จะลบบันทึกอาร์ไคฟ์ที่เลือกทั้งหมดจาก IndexedDB ดำเนินการต่อหรือไม่?"
+   },
+   "archiveClearConfirmTitle": {
+      "message": "คำเตือน"
+   },
+   "archiveClearTooltip": {
+      "message": "ลบบันทึกที่เลือกทั้งหมดออกจากคิว"
+   },
+   "archiveDeleteButton": {
+      "message": "ลบ"
+   },
+   "archiveDeleteTooltip": {
+      "message": "ลบบันทึกที่เลือกทั้งหมดในโหมดอาร์ไคฟ์"
+   },
+   "archiveErrorFileNotReadable": {
+      "message": "อ่านไฟล์ \"$1\" ไม่สำเร็จ โปรดเลือกไฟล์ใหม่ สำหรับ ZIP ขนาดใหญ่ ให้อัปโหลดไฟล์ .js โดยตรง"
+   },
+   "archiveErrorInvalidPayload": {
+      "message": "เนื้อหาไฟล์อาร์ไคฟ์ไม่ถูกต้อง"
+   },
+   "archiveErrorNoSupportedFiles": {
+      "message": "ไม่พบไฟล์ที่รองรับใน zip"
+   },
+   "archiveErrorNoValidRecords": {
+      "message": "ไม่พบบันทึกอาร์ไคฟ์ที่ใช้งานได้"
+   },
+   "archiveErrorUnsupportedFile": {
+      "message": "ไฟล์อาร์ไคฟ์ที่ไม่รองรับ: $1"
+   },
+   "archiveFilterDatePlaceholder": {
+      "message": "ไม่บังคับ"
+   },
+   "archiveFilterFrom": {
+      "message": "จาก"
+   },
+   "archiveFilterKeyword": {
+      "message": "คำค้น"
+   },
+   "archiveFilterKeywordPlaceholder": {
+      "message": "ค้นหาเนื้อหา"
+   },
+   "archiveFilterTip": {
+      "message": "บันทึกถูกใจมักรองรับเฉพาะการค้นหาคำเท่านั้น"
+   },
+   "archiveFilterTo": {
+      "message": "ถึง"
+   },
+   "archiveFilterType": {
+      "message": "ประเภท"
+   },
+   "archiveFiltersSection": {
+      "message": "ตัวกรอง"
+   },
+   "archiveImportButton": {
+      "message": "นำเข้า"
+   },
+   "archiveImportDescription": {
+      "message": "รองรับ zip ทางการ tweets.js และ like.js หากมีรายการรอลบอยู่แล้ว สามารถเลือกรวมหรือล้างก่อนนำเข้าได้"
+   },
+   "archiveImportFailed": {
+      "message": "นำเข้าไม่สำเร็จ"
+   },
+   "archiveImportModeMerge": {
+      "message": "รวม"
+   },
+   "archiveImportModeMessage": {
+      "message": "พบรายการรอลบอยู่แล้ว ต้องการล้างก่อนหรือรวมกับการนำเข้าใหม่?"
+   },
+   "archiveImportModeReplace": {
+      "message": "ล้างแล้วนำเข้า"
+   },
+   "archiveImportModeTitle": {
+      "message": "โหมดนำเข้า"
+   },
+   "archiveImportResult": {
+      "message": "นำเข้า $1 ข้ามซ้ำ $2 ไม่ถูกต้อง $3"
+   },
+   "archiveImportSection": {
+      "message": "นำเข้าไฟล์"
+   },
+   "archiveLoaderDeleted": {
+      "message": "ลบแล้ว"
+   },
+   "archiveLoaderPending": {
+      "message": "รอดำเนินการ"
+   },
+   "archiveLoaderRecentDeleted": {
+      "message": "ลบล่าสุด"
+   },
+   "archiveLoaderRunning": {
+      "message": "โหมดอาร์ไคฟ์ของ DeleteTweets กำลังทำงาน..."
+   },
+   "archiveLoaderSkipped": {
+      "message": "ข้ามแล้ว"
+   },
+   "archiveLoginReady": {
+      "message": "เข้าสู่ระบบ X แล้ว"
+   },
+   "archiveLoginRequired": {
+      "message": "ต้องเข้าสู่ระบบ X"
+   },
+   "archivePageHeading": {
+      "message": "ตัวจัดการอาร์ไคฟ์"
+   },
+   "archivePageSubtitle": {
+      "message": "โหลดคิวที่รออยู่ในปัจจุบัน นำเข้าไฟล์อาร์ไคฟ์ทางการ และลบรายการที่เลือกในโหมดอาร์ไคฟ์"
+   },
+   "archivePageTitle": {
+      "message": "ตัวจัดการอาร์ไคฟ์"
+   },
+   "archivePendingSection": {
+      "message": "บันทึกที่รอดำเนินการ"
+   },
+   "archiveProgressExtracting": {
+      "message": "กำลังแยก $1 ($2/$3)..."
+   },
+   "archiveProgressParsing": {
+      "message": "กำลังวิเคราะห์... $1 MB / $2 MB"
+   },
+   "archiveProgressReadingZip": {
+      "message": "กำลังอ่านไดเรกทอรี ZIP..."
+   },
+   "archiveRefreshButton": {
+      "message": "รีเฟรช"
+   },
+   "archiveResetButton": {
+      "message": "รีเซ็ต"
+   },
+   "archiveSelectFilteredButton": {
+      "message": "เลือก"
+   },
+   "archiveSelectFilteredSuccess": {
+      "message": "เลือก $1 รายการแล้ว"
+   },
+   "archiveSelectionUpdateFailed": {
+      "message": "อัปเดตการเลือกไม่สำเร็จ"
+   },
+   "archiveStartDeleteNeedLogin": {
+      "message": "โปรดเข้าสู่ระบบ X ก่อน"
+   },
+   "archiveStartDeleteNeedSelection": {
+      "message": "โปรดเลือกบันทึกก่อนเริ่ม"
+   },
+   "archiveSummaryLike": {
+      "message": "ถูกใจ"
+   },
+   "archiveSummaryPending": {
+      "message": "รอดำเนินการ"
+   },
+   "archiveSummaryReply": {
+      "message": "ตอบกลับ"
+   },
+   "archiveSummaryRetweet": {
+      "message": "รีทวีต"
+   },
+   "archiveSummarySelected": {
+      "message": "เลือกแล้ว"
+   },
+   "archiveSummaryTweet": {
+      "message": "ทวีต"
+   },
+   "archiveTableContent": {
+      "message": "เนื้อหา"
+   },
+   "archiveTableCreated": {
+      "message": "สร้างเมื่อ"
+   },
+   "archiveTableEmpty": {
+      "message": "ไม่มีบันทึกอาร์ไคฟ์ที่รอดำเนินการ"
+   },
+   "archiveTableEmptyContent": {
+      "message": "(ว่าง)"
+   },
+   "archiveTableFails": {
+      "message": "ล้มเหลว"
+   },
+   "archiveTablePick": {
+      "message": "เลือก"
+   },
+   "archiveTableTweetId": {
+      "message": "ID ทวีต"
+   },
+   "archiveTableType": {
+      "message": "ประเภท"
+   },
+   "archiveUnselectFilteredButton": {
+      "message": "ยกเลิกเลือก"
+   },
+   "archiveUnselectFilteredSuccess": {
+      "message": "ยกเลิกเลือก $1 รายการแล้ว"
+   },
+   "bindlicense": {
+      "message": "ผูกใบอนุญาต"
+   },
+   "clicklogin": {
+      "message": "เข้าสู่ระบบ Twitter เพื่อดำเนินการต่อ"
+   },
+   "deleteAll": {
+      "message": "ลบทั้งหมด"
+   },
+   "deleteByCondition": {
+      "message": "ลบตามเงื่อนไข"
+   },
+   "exceptionPlaceholder": {
+      "message": "ทวีตที่มีคำสำคัญเหล่านี้จะไม่ถูกลบ"
+   },
+   "exceptionSetting": {
+      "message": "การตั้งค่าข้อยกเว้น"
+   },
+   "exceptionTips": {
+      "message": "ข้อยกเว้น (ป้อนคำสำคัญที่คั่นด้วย ';')"
+   },
+   "exportBackup": {
+      "message": "ส่งออกข้อมูลสำรอง"
+   },
+   "exportDeleted": {
+      "message": "ส่งออกรายการที่ลบแล้ว"
+   },
+   "exportProUser": {
+      "message": "ส่งออก (ผู้ใช้ Pro)"
+   },
+   "extensionDescription": {
+      "message": "ลบทวีต/รีทวีต/ตอบกลับ/ถูกใจด้วยคลิกเดียว"
+   },
+   "filterConditions": {
+      "message": "เงื่อนไขการกรอง"
+   },
+   "keywords": {
+      "message": "คำสำคัญ"
+   },
+   "licenseShort": {
+      "message": "ใบอนุญาต"
+   },
+   "licenseexpired": {
+      "message": "ใบอนุญาตหมดอายุ"
+   },
+   "loadingText": {
+      "message": "กำลังโหลด..."
+   },
+   "message_bindfail": {
+      "message": "ผูกล้มเหลว"
+   },
+   "message_bindsuccess": {
+      "message": "ผูกสำเร็จ"
+   },
+   "message_incorrect_input": {
+      "message": "ข้อมูลที่ป้อนไม่ถูกต้อง"
+   },
+   "message_license_expired": {
+      "message": "ใบอนุญาตที่คุณป้อนหมดอายุแล้ว!"
+   },
+   "message_license_invalid": {
+      "message": "ใบอนุญาตไม่ถูกต้อง"
+   },
+   "message_live_daily_limit_reached": {
+      "message": "ผู้ใช้ฟรีสามารถลบได้สูงสุด 50 รายการต่อวัน ถึงขีดจำกัดของวันนี้แล้ว"
+   },
+   "message_networkerror": {
+      "message": "เกิดข้อผิดพลาดของเครือข่าย โปรดลองอีกครั้งในภายหลัง"
+   },
+   "message_not_export": {
+      "message": "ไม่มีข้อมูลที่สามารถส่งออกได้ในขณะนี้"
+   },
+   "message_notbackup": {
+      "message": "คุณยังไม่ได้สำรองข้อมูลทวีต"
+   },
+   "message_notpermission": {
+      "message": "ไม่มีสิทธิ์ในการดำเนินการนี้"
+   },
+   "message_right_timeformat": {
+      "message": "กรุณาป้อนรูปแบบเวลาที่ถูกต้อง เช่น: 2023-01-01 00:00:00"
+   },
+   "message_select_search": {
+      "message": "กรุณาเลือกเงื่อนไขการค้นหาอย่างน้อยหนึ่งรายการ"
+   },
+   "message_select_type_tweet": {
+      "message": "กรุณาเลือกประเภทของทวีตที่จะลบ"
+   },
+   "message_starttime_endtime": {
+      "message": "เวลาเริ่มต้นต้องเป็นก่อนเวลาสิ้นสุด"
+   },
+   "message_upgrade_to_pro": {
+      "message": "อัปเกรดเป็นบัญชี Pro เพื่อเข้าถึงฟีเจอร์เหล่านี้"
+   },
+   "optionsLikes": {
+      "message": "ถูกใจ"
+   },
+   "optionsReplys": {
+      "message": "ตอบกลับ"
+   },
+   "optionsRetweets": {
+      "message": "รีทวีต"
+   },
+   "optionsTweets": {
+      "message": "ทวีต"
+   },
+   "pleaseEnterKeywords": {
+      "message": "กรุณาป้อนคำสำคัญ"
+   },
+   "promptCancel": {
+      "message": "ยกเลิก"
+   },
+   "promptConfirm": {
+      "message": "ยืนยัน"
+   },
+   "promptEnterLicense": {
+      "message": "ป้อนใบอนุญาต"
+   },
+   "promptLicenseTitle": {
+      "message": "ใบอนุญาต"
+   },
+   "rebindlicense": {
+      "message": "ผูกใบอนุญาตใหม่"
+   },
+   "recordTypeLike": {
+      "message": "ถูกใจ"
+   },
+   "recordTypeReply": {
+      "message": "ตอบกลับ"
+   },
+   "recordTypeRetweet": {
+      "message": "รีทวีต"
+   },
+   "recordTypeTweet": {
+      "message": "ทวีต"
+   },
+   "selecttweettype": {
+      "message": "เลือกประเภทของทวีตที่จะลบ"
+   },
+   "startBackup": {
+      "message": "สำรองข้อมูล"
+   },
+   "startDelete": {
+      "message": "เริ่ม"
+   },
+   "timeFrom": {
+      "message": "จาก"
+   },
+   "timeTo": {
+      "message": "ถึง"
+   },
+   "tweetInfoDomForward": {
+      "message": "ส่งต่อ"
+   },
+   "tweetInfoDomLikes": {
+      "message": "ถูกใจ"
+   },
+   "tweetInfoDomReply": {
+      "message": "ตอบกลับ"
+   },
+   "upgradeShort": {
+      "message": "อัปเกรด"
+   },
+   "upgradetoPro": {
+      "message": "อัปเกรดเป็น Pro"
+   }
+}

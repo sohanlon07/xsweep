@@ -1,0 +1,32 @@
+{
+   "action": {
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "/background.js"
+   },
+   "content_scripts": [ {
+      "css": [ "style.css" ],
+      "js": [ "/content.js" ],
+      "matches": [ "https://*.x.com/*" ],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_extensionDescription__",
+   "host_permissions": [ "*://*.x.com/*", "*://*.deletetweets.net/*" ],
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiL4ZRv5mTATEZQBYtswcGgGf2e7czYcixXeOF/FpBzVln2+g4dy09Usot9VqlZ/+AVyiXrmXruE/DLEt80ka433n7l70J8j0g+6HcrZmuX0QIzhoG4L2CoJgM9js3pdDg5MpwVhwaLzImVp0k7vdtso1bFwVdGGFCdLCFPt4ugsf7xu5bxJPdQn5CjV9N0sWtxHqkNuRynW5Tu2DJLUXJltNC+Ddmry52B9ulv5bigbHcgiZYOnG/0ETkWe4GEF95KXE6P25Hw0l4QktArPQcMt4rk+bag4MSDK1UeqBg8zJ2An4pxxuFBQNiUa5zOAeKKeVkYBdSChvaM2CICsuOQIDAQAB",
+   "manifest_version": 3,
+   "name": "DeleteTweets",
+   "permissions": [ "storage", "cookies" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "4.6.0",
+   "web_accessible_resources": [ {
+      "matches": [ "https://*.x.com/*" ],
+      "resources": [ "/injected.js" ]
+   } ]
+}

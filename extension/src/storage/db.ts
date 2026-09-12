@@ -1,12 +1,27 @@
 import type { Attempt, QueueItem, Run } from '../shared/contracts';
-const DB = 'tweet-cleaner'; const VERSION = 1;
+const DB = 'tweet-cleaner'; const VERSION = 2;
 export class Store {
   private db?: IDBDatabase;
-  async open() { if (this.db) return this.db; this.db = await new Promise((resolve, reject) => { const r = indexedDB.open(DB, VERSION); r.onupgradeneeded = () => { const db = r.result; for (const n of ['items','runs','attempts','meta']) if (!db.objectStoreNames.contains(n)) db.createObjectStore(n, { keyPath: 'id' }); }; r.onsuccess = () => resolve(r.result); r.onerror = () => reject(r.error); }); return this.db; }
+  async open() { if (this.db) return this.db; this.db = await new Promise((resolve, reject) => { const r = indexedDB.open(DB, VERSION); r.onupgradeneeded = event => {
+    const db = r.result;
+    for (const n of ['items','runs','attempts','meta']) if (!db.objectStoreNames.contains(n)) db.createObjectStore(n, { keyPath: 'id' });
+    if ((event.oldVersion ?? 0) > 0) {
+      const runs = r.transaction?.objectStore('runs');
+      const cursor = runs?.openCursor();
+      if (cursor) cursor.onsuccess = () => {
+        const current = cursor.result;
+        if (!current) return;
+        const run = current.value as Run;
+        current.update({ ...run, state: run.state === 'active' ? 'interrupted' : run.state, transport: 'direct' });
+        current.continue();
+      };
+    }
+  }; r.onsuccess = () => resolve(r.result); r.onerror = () => reject(r.error); }); return this.db; }
   async put(store: 'items'|'runs'|'attempts'|'meta', value: unknown) { const db = await this.open(); await new Promise<void>((resolve,reject) => { const t=db.transaction(store,'readwrite'); t.objectStore(store).put(value); t.oncomplete=()=>resolve(); t.onerror=()=>reject(t.error); }); }
   async get<T>(store: 'items'|'runs'|'attempts'|'meta', id: string): Promise<T|undefined> { const db=await this.open(); return new Promise((resolve,reject)=>{const r=db.transaction(store).objectStore(store).get(id);r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);}); }
   async all<T>(store: 'items'|'runs'|'attempts'): Promise<T[]> { const db=await this.open(); return new Promise((resolve,reject)=>{const r=db.transaction(store).objectStore(store).getAll();r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);}); }
   async replaceItems(items: QueueItem[]) { const db=await this.open(); await new Promise<void>((resolve,reject)=>{const t=db.transaction('items','readwrite'), s=t.objectStore('items'); s.clear(); items.forEach(i=>s.put(i)); t.oncomplete=()=>resolve();t.onerror=()=>reject(t.error);}); }
+  async clearHistory() { const db = await this.open(); await new Promise<void>((resolve, reject) => { const transaction = db.transaction(['items', 'runs', 'attempts'], 'readwrite'); for (const name of ['items', 'runs', 'attempts']) transaction.objectStore(name).clear(); transaction.oncomplete = () => resolve(); transaction.onerror = () => reject(transaction.error); }); }
   async activeRun(): Promise<Run|undefined> { return (await this.all<Run>('runs')).find(r => ['active','paused','interrupted'].includes(r.state)); }
   async claim(run: Run): Promise<boolean> {
     const db = await this.open();

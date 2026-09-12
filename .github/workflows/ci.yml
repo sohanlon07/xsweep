@@ -1,0 +1,93 @@
+name: XSweep CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Test and build
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: extension
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: extension/package-lock.json
+      - run: npm ci
+      - run: npm run check
+      - run: npm test
+      - run: npm run build
+      - run: npm run validate:package
+
+  audit-and-package:
+    name: Audit and package
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: extension
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: extension/package-lock.json
+      - run: npm ci
+      - run: npm run build
+      - run: npm run validate:package
+      - run: npm audit --omit=dev --audit-level=moderate
+      - run: cd dist && zip -qr ../xsweep-extension.zip .
+      - uses: actions/upload-artifact@v4
+        with:
+          name: xsweep-extension
+          path: extension/xsweep-extension.zip
+          if-no-files-found: error
+
+  release:
+    name: Create semantic-version release
+    needs: audit-and-package
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Select the next patch release
+        id: version
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          previous="$(git tag -l | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$' | sort -V | tail -n 1 || true)"
+          if [ -z "$previous" ]; then
+            next="v0.1.0"
+          else
+            number="${previous#v}"
+            major="${number%%.*}"
+            remainder="${number#*.}"
+            minor="${remainder%%.*}"
+            patch="${remainder##*.}"
+            next="v${major}.${minor}.$((patch + 1))"
+          fi
+          echo "version=$next" >> "$GITHUB_OUTPUT"
+          echo "Publishing $next after $previous"
+      - uses: actions/download-artifact@v4
+        with:
+          name: xsweep-extension
+          path: release
+      - name: Create GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "${{ steps.version.outputs.version }}" release/xsweep-extension.zip --title "XSweep ${{ steps.version.outputs.version }}" --generate-notes

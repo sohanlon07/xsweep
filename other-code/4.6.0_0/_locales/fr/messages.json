@@ -1,0 +1,368 @@
+{
+   "archiveApplyFilterButton": {
+      "message": "Filtrer"
+   },
+   "archiveButtonLabel": {
+      "message": "Archive"
+   },
+   "archiveClearButton": {
+      "message": "Vider"
+   },
+   "archiveClearConfirmMessage": {
+      "message": "Cela supprimera d'IndexedDB tous les éléments d'archive en attente sélectionnés. Continuer ?"
+   },
+   "archiveClearConfirmTitle": {
+      "message": "Avertissement"
+   },
+   "archiveClearTooltip": {
+      "message": "Retirer de la file tous les éléments en attente sélectionnés."
+   },
+   "archiveDeleteButton": {
+      "message": "Supprimer"
+   },
+   "archiveDeleteTooltip": {
+      "message": "Supprimer en mode archive tous les éléments en attente sélectionnés."
+   },
+   "archiveErrorFileNotReadable": {
+      "message": "Impossible de lire le fichier « $1 ». Veuillez le sélectionner à nouveau. Pour les ZIP volumineux, importez directement les fichiers .js."
+   },
+   "archiveErrorInvalidPayload": {
+      "message": "Le contenu du fichier d'archive est invalide."
+   },
+   "archiveErrorNoSupportedFiles": {
+      "message": "Aucun fichier d'archive pris en charge dans le zip."
+   },
+   "archiveErrorNoValidRecords": {
+      "message": "Aucun élément d'archive valide trouvé."
+   },
+   "archiveErrorUnsupportedFile": {
+      "message": "Fichier d'archive non pris en charge : $1"
+   },
+   "archiveFilterDatePlaceholder": {
+      "message": "Facultatif"
+   },
+   "archiveFilterFrom": {
+      "message": "Du"
+   },
+   "archiveFilterKeyword": {
+      "message": "Mot-clé"
+   },
+   "archiveFilterKeywordPlaceholder": {
+      "message": "Rechercher dans le contenu"
+   },
+   "archiveFilterTip": {
+      "message": "Les J'aime ne prennent généralement en charge que le filtre par mot-clé."
+   },
+   "archiveFilterTo": {
+      "message": "Au"
+   },
+   "archiveFilterType": {
+      "message": "Type"
+   },
+   "archiveFiltersSection": {
+      "message": "Filtres"
+   },
+   "archiveImportButton": {
+      "message": "Importer"
+   },
+   "archiveImportDescription": {
+      "message": "Prend en charge le zip officiel, tweets.js et like.js. Si des enregistrements existent déjà, vous pouvez les fusionner ou les vider avant l'import."
+   },
+   "archiveImportFailed": {
+      "message": "Échec de l'import"
+   },
+   "archiveImportModeMerge": {
+      "message": "Fusionner"
+   },
+   "archiveImportModeMessage": {
+      "message": "Des enregistrements en attente existent déjà. Les vider d'abord ou les fusionner avec ce nouvel import ?"
+   },
+   "archiveImportModeReplace": {
+      "message": "Vider et importer"
+   },
+   "archiveImportModeTitle": {
+      "message": "Mode d'import"
+   },
+   "archiveImportResult": {
+      "message": "Importés : $1, doublons ignorés : $2, invalides : $3."
+   },
+   "archiveImportSection": {
+      "message": "Importer des fichiers"
+   },
+   "archiveLoaderDeleted": {
+      "message": "Supprimés"
+   },
+   "archiveLoaderPending": {
+      "message": "En attente"
+   },
+   "archiveLoaderRecentDeleted": {
+      "message": "Récemment supprimés"
+   },
+   "archiveLoaderRunning": {
+      "message": "Le mode archive de DeleteTweets est en cours..."
+   },
+   "archiveLoaderSkipped": {
+      "message": "Ignorés"
+   },
+   "archiveLoginReady": {
+      "message": "Connecté à X"
+   },
+   "archiveLoginRequired": {
+      "message": "Connexion à X requise"
+   },
+   "archivePageHeading": {
+      "message": "Gestionnaire d'archives"
+   },
+   "archivePageSubtitle": {
+      "message": "Charger la file d'attente, importer des fichiers d'archive officiels et supprimer les éléments sélectionnés en mode archive."
+   },
+   "archivePageTitle": {
+      "message": "Gestionnaire d'archives"
+   },
+   "archivePendingSection": {
+      "message": "Éléments en attente"
+   },
+   "archiveProgressExtracting": {
+      "message": "Extraction de $1 ($2/$3)..."
+   },
+   "archiveProgressParsing": {
+      "message": "Analyse... $1 Mo / $2 Mo"
+   },
+   "archiveProgressReadingZip": {
+      "message": "Lecture du répertoire ZIP..."
+   },
+   "archiveRefreshButton": {
+      "message": "Actualiser"
+   },
+   "archiveResetButton": {
+      "message": "Réinitialiser"
+   },
+   "archiveSelectFilteredButton": {
+      "message": "Sélectionner"
+   },
+   "archiveSelectFilteredSuccess": {
+      "message": "$1 éléments sélectionnés."
+   },
+   "archiveSelectionUpdateFailed": {
+      "message": "Échec de la mise à jour de la sélection"
+   },
+   "archiveStartDeleteNeedLogin": {
+      "message": "Veuillez d'abord vous connecter à X."
+   },
+   "archiveStartDeleteNeedSelection": {
+      "message": "Sélectionnez des éléments en attente avant de démarrer."
+   },
+   "archiveSummaryLike": {
+      "message": "J'aime"
+   },
+   "archiveSummaryPending": {
+      "message": "En attente"
+   },
+   "archiveSummaryReply": {
+      "message": "Réponse"
+   },
+   "archiveSummaryRetweet": {
+      "message": "Retweet"
+   },
+   "archiveSummarySelected": {
+      "message": "Sélectionnés"
+   },
+   "archiveSummaryTweet": {
+      "message": "Tweet"
+   },
+   "archiveTableContent": {
+      "message": "Contenu"
+   },
+   "archiveTableCreated": {
+      "message": "Créé"
+   },
+   "archiveTableEmpty": {
+      "message": "Aucun élément d'archive en attente"
+   },
+   "archiveTableEmptyContent": {
+      "message": "(vide)"
+   },
+   "archiveTableFails": {
+      "message": "Échecs"
+   },
+   "archiveTablePick": {
+      "message": "Choisir"
+   },
+   "archiveTableTweetId": {
+      "message": "ID du tweet"
+   },
+   "archiveTableType": {
+      "message": "Type"
+   },
+   "archiveUnselectFilteredButton": {
+      "message": "Désélectionner"
+   },
+   "archiveUnselectFilteredSuccess": {
+      "message": "$1 éléments désélectionnés."
+   },
+   "bindlicense": {
+      "message": "Lier la licence"
+   },
+   "clicklogin": {
+      "message": "Connectez-vous à Twitter pour continuer"
+   },
+   "deleteAll": {
+      "message": "Tout supprimer"
+   },
+   "deleteByCondition": {
+      "message": "Supprimer selon des conditions"
+   },
+   "exceptionPlaceholder": {
+      "message": "Les tweets contenant ces mots-clés ne seront pas supprimés"
+   },
+   "exceptionSetting": {
+      "message": "Paramètres d'exception"
+   },
+   "exceptionTips": {
+      "message": "Exception (Saisissez les mots-clés séparés par « ; »)"
+   },
+   "exportBackup": {
+      "message": "Exporter la sauvegarde"
+   },
+   "exportDeleted": {
+      "message": "Exporter les éléments supprimés"
+   },
+   "exportProUser": {
+      "message": "Exporter (Utilisateur Pro)"
+   },
+   "extensionDescription": {
+      "message": "Supprimez tweets/retweets/réponses/likes en un clic"
+   },
+   "filterConditions": {
+      "message": "Conditions de filtrage"
+   },
+   "keywords": {
+      "message": "Mots-clés"
+   },
+   "licenseShort": {
+      "message": "Licence"
+   },
+   "licenseexpired": {
+      "message": "Licence expirée"
+   },
+   "loadingText": {
+      "message": "Chargement..."
+   },
+   "message_bindfail": {
+      "message": "Échec de la liaison"
+   },
+   "message_bindsuccess": {
+      "message": "Liaison réussie"
+   },
+   "message_incorrect_input": {
+      "message": "Saisie incorrecte"
+   },
+   "message_license_expired": {
+      "message": "La licence que vous avez saisie a expiré !"
+   },
+   "message_license_invalid": {
+      "message": "La licence n'est pas valide"
+   },
+   "message_live_daily_limit_reached": {
+      "message": "Les utilisateurs gratuits peuvent supprimer jusqu'à 50 éléments par jour. La limite d'aujourd'hui a été atteinte."
+   },
+   "message_networkerror": {
+      "message": "Erreur réseau. Veuillez réessayer plus tard"
+   },
+   "message_not_export": {
+      "message": "Aucune donnée exportable disponible actuellement"
+   },
+   "message_notbackup": {
+      "message": "Vous n'avez pas encore sauvegardé vos tweets"
+   },
+   "message_notpermission": {
+      "message": "Vous n'avez pas l'autorisation d'effectuer cette opération"
+   },
+   "message_right_timeformat": {
+      "message": "Saisissez un format d'heure valide, par exemple : 2023-01-01 00:00:00"
+   },
+   "message_select_search": {
+      "message": "Veuillez sélectionner au moins une condition de recherche"
+   },
+   "message_select_type_tweet": {
+      "message": "Veuillez sélectionner le type de tweets à supprimer"
+   },
+   "message_starttime_endtime": {
+      "message": "L'heure de début doit être antérieure à l'heure de fin"
+   },
+   "message_upgrade_to_pro": {
+      "message": "Passez à un compte Pro pour accéder à ces fonctionnalités"
+   },
+   "optionsLikes": {
+      "message": "J'aime"
+   },
+   "optionsReplys": {
+      "message": "Réponses"
+   },
+   "optionsRetweets": {
+      "message": "Retweets"
+   },
+   "optionsTweets": {
+      "message": "Tweets"
+   },
+   "pleaseEnterKeywords": {
+      "message": "Saisissez des mots-clés"
+   },
+   "promptCancel": {
+      "message": "Annuler"
+   },
+   "promptConfirm": {
+      "message": "Confirmer"
+   },
+   "promptEnterLicense": {
+      "message": "Saisissez la licence"
+   },
+   "promptLicenseTitle": {
+      "message": "Licence"
+   },
+   "rebindlicense": {
+      "message": "Relier la licence"
+   },
+   "recordTypeLike": {
+      "message": "J'aime"
+   },
+   "recordTypeReply": {
+      "message": "Réponse"
+   },
+   "recordTypeRetweet": {
+      "message": "Retweet"
+   },
+   "recordTypeTweet": {
+      "message": "Tweet"
+   },
+   "selecttweettype": {
+      "message": "Sélectionnez le type de tweets à supprimer"
+   },
+   "startBackup": {
+      "message": "Sauvegarder"
+   },
+   "startDelete": {
+      "message": "Démarrer"
+   },
+   "timeFrom": {
+      "message": "De"
+   },
+   "timeTo": {
+      "message": "À"
+   },
+   "tweetInfoDomForward": {
+      "message": "Transférer"
+   },
+   "tweetInfoDomLikes": {
+      "message": "J'aime"
+   },
+   "tweetInfoDomReply": {
+      "message": "Réponse"
+   },
+   "upgradeShort": {
+      "message": "Passer Pro"
+   },
+   "upgradetoPro": {
+      "message": "Passer à Pro"
+   }
+}

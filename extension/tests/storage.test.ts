@@ -18,4 +18,15 @@ describe('run ownership', () => {
     expect(await store.claim(run('third', 'active'))).toBe(false);
     expect(await store.get<Run>('runs', 'third')).toBeUndefined();
   });
+
+  it('clears only local queue, run, and attempt history for a fresh start', async () => {
+    const store = new Store();
+    await store.put('items', { id: 'delete_post:1', targetId: '1', action: 'delete_post', kind: 'tweet', text: '', source: 'archive', selected: false, state: 'pending' });
+    await store.put('runs', run('history', 'complete'));
+    await store.put('attempts', { id: 'attempt', runId: 'history', itemId: 'delete_post:1', state: 'verified', createdAt: 1 });
+    await store.clearHistory();
+    await expect(store.all('items')).resolves.toEqual([]);
+    await expect(store.all('runs')).resolves.toEqual([]);
+    await expect(store.all('attempts')).resolves.toEqual([]);
+  });
 });

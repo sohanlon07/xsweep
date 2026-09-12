@@ -1,0 +1,368 @@
+{
+   "archiveApplyFilterButton": {
+      "message": "تصفية"
+   },
+   "archiveButtonLabel": {
+      "message": "أرشيف"
+   },
+   "archiveClearButton": {
+      "message": "مسح"
+   },
+   "archiveClearConfirmMessage": {
+      "message": "سيؤدي هذا إلى إزالة جميع السجلات المحددة من IndexedDB. هل تريد المتابعة؟"
+   },
+   "archiveClearConfirmTitle": {
+      "message": "تحذير"
+   },
+   "archiveClearTooltip": {
+      "message": "إزالة جميع السجلات المحددة من قائمة الانتظار."
+   },
+   "archiveDeleteButton": {
+      "message": "حذف"
+   },
+   "archiveDeleteTooltip": {
+      "message": "حذف جميع السجلات المحددة في وضع الأرشيف."
+   },
+   "archiveErrorFileNotReadable": {
+      "message": "تعذرت قراءة الملف «$1». يرجى إعادة اختياره. للملفات الكبيرة، حمّل ملفات .js مباشرة."
+   },
+   "archiveErrorInvalidPayload": {
+      "message": "محتوى ملف الأرشيف غير صالح."
+   },
+   "archiveErrorNoSupportedFiles": {
+      "message": "لم يتم العثور على ملفات أرشيف مدعومة في الحزمة."
+   },
+   "archiveErrorNoValidRecords": {
+      "message": "لم يتم العثور على سجلات أرشيف صالحة."
+   },
+   "archiveErrorUnsupportedFile": {
+      "message": "ملف أرشيف غير مدعوم: $1"
+   },
+   "archiveFilterDatePlaceholder": {
+      "message": "اختياري"
+   },
+   "archiveFilterFrom": {
+      "message": "من"
+   },
+   "archiveFilterKeyword": {
+      "message": "كلمة مفتاحية"
+   },
+   "archiveFilterKeywordPlaceholder": {
+      "message": "البحث في المحتوى"
+   },
+   "archiveFilterTip": {
+      "message": "تدعم سجلات الإعجاب عادةً تصفية الكلمات المفتاحية فقط."
+   },
+   "archiveFilterTo": {
+      "message": "إلى"
+   },
+   "archiveFilterType": {
+      "message": "النوع"
+   },
+   "archiveFiltersSection": {
+      "message": "عوامل التصفية"
+   },
+   "archiveImportButton": {
+      "message": "استيراد"
+   },
+   "archiveImportDescription": {
+      "message": "يدعم zip الرسمي و tweets.js و like.js. عند وجود سجلات معلقة يمكنك اختيار الدمج أو مسحها قبل الاستيراد."
+   },
+   "archiveImportFailed": {
+      "message": "فشل الاستيراد"
+   },
+   "archiveImportModeMerge": {
+      "message": "دمج"
+   },
+   "archiveImportModeMessage": {
+      "message": "تم اكتشاف سجلات معلقة موجودة. هل تريد مسحها أولاً أم دمجها مع الاستيراد الجديد؟"
+   },
+   "archiveImportModeReplace": {
+      "message": "مسح ثم استيراد"
+   },
+   "archiveImportModeTitle": {
+      "message": "وضع الاستيراد"
+   },
+   "archiveImportResult": {
+      "message": "تم استيراد $1، تخطي $2 مكررة، $3 غير صالحة."
+   },
+   "archiveImportSection": {
+      "message": "استيراد الملفات"
+   },
+   "archiveLoaderDeleted": {
+      "message": "محذوف"
+   },
+   "archiveLoaderPending": {
+      "message": "قيد الانتظار"
+   },
+   "archiveLoaderRecentDeleted": {
+      "message": "المحذوفة مؤخرًا"
+   },
+   "archiveLoaderRunning": {
+      "message": "وضع أرشيف DeleteTweets قيد التشغيل..."
+   },
+   "archiveLoaderSkipped": {
+      "message": "متخطى"
+   },
+   "archiveLoginReady": {
+      "message": "تم تسجيل الدخول إلى X"
+   },
+   "archiveLoginRequired": {
+      "message": "يلزم تسجيل الدخول إلى X"
+   },
+   "archivePageHeading": {
+      "message": "مدير الأرشيف"
+   },
+   "archivePageSubtitle": {
+      "message": "تحميل قائمة الانتظار الحالية، واستيراد ملفات الأرشيف الرسمية، وحذف العناصر المحددة في وضع الأرشيف."
+   },
+   "archivePageTitle": {
+      "message": "مدير الأرشيف"
+   },
+   "archivePendingSection": {
+      "message": "السجلات المعلقة"
+   },
+   "archiveProgressExtracting": {
+      "message": "استخراج $1 ($2/$3)..."
+   },
+   "archiveProgressParsing": {
+      "message": "تحليل... $1 ميجابايت / $2 ميجابايت"
+   },
+   "archiveProgressReadingZip": {
+      "message": "قراءة فهرس ZIP..."
+   },
+   "archiveRefreshButton": {
+      "message": "تحديث"
+   },
+   "archiveResetButton": {
+      "message": "إعادة تعيين"
+   },
+   "archiveSelectFilteredButton": {
+      "message": "تحديد"
+   },
+   "archiveSelectFilteredSuccess": {
+      "message": "تم تحديد $1 سجل."
+   },
+   "archiveSelectionUpdateFailed": {
+      "message": "فشل تحديث التحديد"
+   },
+   "archiveStartDeleteNeedLogin": {
+      "message": "يرجى تسجيل الدخول إلى X أولاً."
+   },
+   "archiveStartDeleteNeedSelection": {
+      "message": "يرجى تحديد سجلات معلقة قبل البدء."
+   },
+   "archiveSummaryLike": {
+      "message": "إعجاب"
+   },
+   "archiveSummaryPending": {
+      "message": "قيد الانتظار"
+   },
+   "archiveSummaryReply": {
+      "message": "رد"
+   },
+   "archiveSummaryRetweet": {
+      "message": "إعادة تغريد"
+   },
+   "archiveSummarySelected": {
+      "message": "محدد"
+   },
+   "archiveSummaryTweet": {
+      "message": "تغريدة"
+   },
+   "archiveTableContent": {
+      "message": "المحتوى"
+   },
+   "archiveTableCreated": {
+      "message": "تاريخ الإنشاء"
+   },
+   "archiveTableEmpty": {
+      "message": "لا توجد سجلات أرشيف معلقة"
+   },
+   "archiveTableEmptyContent": {
+      "message": "(فارغ)"
+   },
+   "archiveTableFails": {
+      "message": "إخفاقات"
+   },
+   "archiveTablePick": {
+      "message": "اختيار"
+   },
+   "archiveTableTweetId": {
+      "message": "معرّف التغريدة"
+   },
+   "archiveTableType": {
+      "message": "النوع"
+   },
+   "archiveUnselectFilteredButton": {
+      "message": "إلغاء التحديد"
+   },
+   "archiveUnselectFilteredSuccess": {
+      "message": "تم إلغاء تحديد $1 سجل."
+   },
+   "bindlicense": {
+      "message": "ربط الترخيص"
+   },
+   "clicklogin": {
+      "message": "سجّل الدخول إلى Twitter للمتابعة"
+   },
+   "deleteAll": {
+      "message": "حذف الكل"
+   },
+   "deleteByCondition": {
+      "message": "حذف وفق الشروط"
+   },
+   "exceptionPlaceholder": {
+      "message": "التغريدات التي تحتوي على هذه الكلمات لن يتم حذفها"
+   },
+   "exceptionSetting": {
+      "message": "إعدادات الاستثناء"
+   },
+   "exceptionTips": {
+      "message": "استثناء (أدخل الكلمات المفتاحية مفصولة بـ ';')"
+   },
+   "exportBackup": {
+      "message": "تصدير النسخة الاحتياطية"
+   },
+   "exportDeleted": {
+      "message": "تصدير المحذوفات"
+   },
+   "exportProUser": {
+      "message": "تصدير (مستخدم Pro)"
+   },
+   "extensionDescription": {
+      "message": "احذف التغريدات/إعادة التغريد/الردود/الإعجابات بنقرة واحدة"
+   },
+   "filterConditions": {
+      "message": "شروط التصفية"
+   },
+   "keywords": {
+      "message": "الكلمات المفتاحية"
+   },
+   "licenseShort": {
+      "message": "الترخيص"
+   },
+   "licenseexpired": {
+      "message": "انتهت صلاحية الترخيص"
+   },
+   "loadingText": {
+      "message": "جاري التحميل..."
+   },
+   "message_bindfail": {
+      "message": "فشل الربط"
+   },
+   "message_bindsuccess": {
+      "message": "تم الربط بنجاح"
+   },
+   "message_incorrect_input": {
+      "message": "إدخال غير صحيح"
+   },
+   "message_license_expired": {
+      "message": "انتهت صلاحية الترخيص الذي أدخلته!"
+   },
+   "message_license_invalid": {
+      "message": "الترخيص غير صالح"
+   },
+   "message_live_daily_limit_reached": {
+      "message": "يمكن للمستخدمين المجانيين حذف ما يصل إلى 50 عنصرًا يوميًا. تم الوصول إلى حد اليوم."
+   },
+   "message_networkerror": {
+      "message": "خطأ في الشبكة. حاول مرة أخرى لاحقاً"
+   },
+   "message_not_export": {
+      "message": "لا توجد بيانات متاحة للتصدير حالياً"
+   },
+   "message_notbackup": {
+      "message": "لم تقم بعمل نسخة احتياطية لتغريداتك بعد"
+   },
+   "message_notpermission": {
+      "message": "لا تملك صلاحية لإجراء هذه العملية"
+   },
+   "message_right_timeformat": {
+      "message": "أدخل تنسيق وقت صالح، مثل: 2023-01-01 00:00:00"
+   },
+   "message_select_search": {
+      "message": "الرجاء اختيار شرط بحث واحد على الأقل"
+   },
+   "message_select_type_tweet": {
+      "message": "الرجاء اختيار نوع التغريدات المراد حذفها"
+   },
+   "message_starttime_endtime": {
+      "message": "يجب أن يكون وقت البداية قبل وقت النهاية"
+   },
+   "message_upgrade_to_pro": {
+      "message": "قم بالترقية إلى حساب Pro للوصول إلى هذه الميزات"
+   },
+   "optionsLikes": {
+      "message": "الإعجابات"
+   },
+   "optionsReplys": {
+      "message": "الردود"
+   },
+   "optionsRetweets": {
+      "message": "إعادة التغريد"
+   },
+   "optionsTweets": {
+      "message": "التغريدات"
+   },
+   "pleaseEnterKeywords": {
+      "message": "الرجاء إدخال الكلمات المفتاحية"
+   },
+   "promptCancel": {
+      "message": "إلغاء"
+   },
+   "promptConfirm": {
+      "message": "تأكيد"
+   },
+   "promptEnterLicense": {
+      "message": "أدخل الترخيص"
+   },
+   "promptLicenseTitle": {
+      "message": "الترخيص"
+   },
+   "rebindlicense": {
+      "message": "إعادة ربط الترخيص"
+   },
+   "recordTypeLike": {
+      "message": "إعجاب"
+   },
+   "recordTypeReply": {
+      "message": "رد"
+   },
+   "recordTypeRetweet": {
+      "message": "إعادة تغريد"
+   },
+   "recordTypeTweet": {
+      "message": "تغريدة"
+   },
+   "selecttweettype": {
+      "message": "اختر نوع التغريدات المراد حذفها"
+   },
+   "startBackup": {
+      "message": "نسخ احتياطي"
+   },
+   "startDelete": {
+      "message": "ابدأ"
+   },
+   "timeFrom": {
+      "message": "من"
+   },
+   "timeTo": {
+      "message": "إلى"
+   },
+   "tweetInfoDomForward": {
+      "message": "إعادة التغريد"
+   },
+   "tweetInfoDomLikes": {
+      "message": "الإعجابات"
+   },
+   "tweetInfoDomReply": {
+      "message": "رد"
+   },
+   "upgradeShort": {
+      "message": "ترقية"
+   },
+   "upgradetoPro": {
+      "message": "الترقية إلى Pro"
+   }
+}

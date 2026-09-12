@@ -1,0 +1,368 @@
+{
+   "archiveApplyFilterButton": {
+      "message": "筛选"
+   },
+   "archiveButtonLabel": {
+      "message": "归档"
+   },
+   "archiveClearButton": {
+      "message": "清空"
+   },
+   "archiveClearConfirmMessage": {
+      "message": "此操作会从 IndexedDB 中移除当前已选中的待删除归档记录，是否继续？"
+   },
+   "archiveClearConfirmTitle": {
+      "message": "提示"
+   },
+   "archiveClearTooltip": {
+      "message": "将当前已选中的待删除记录从队列中移除。"
+   },
+   "archiveDeleteButton": {
+      "message": "删除"
+   },
+   "archiveDeleteTooltip": {
+      "message": "以归档模式删除当前已选记录。"
+   },
+   "archiveErrorFileNotReadable": {
+      "message": "读取文件“$1”失败。请重新选择文件后再试。如果 ZIP 文件较大，请先解压后直接上传 .js 文件。"
+   },
+   "archiveErrorInvalidPayload": {
+      "message": "归档文件内容格式无效。"
+   },
+   "archiveErrorNoSupportedFiles": {
+      "message": "zip 包中未找到支持的归档文件。"
+   },
+   "archiveErrorNoValidRecords": {
+      "message": "未解析到有效的归档记录。"
+   },
+   "archiveErrorUnsupportedFile": {
+      "message": "不支持的归档文件：$1"
+   },
+   "archiveFilterDatePlaceholder": {
+      "message": "可选"
+   },
+   "archiveFilterFrom": {
+      "message": "开始"
+   },
+   "archiveFilterKeyword": {
+      "message": "关键词"
+   },
+   "archiveFilterKeywordPlaceholder": {
+      "message": "搜索正文内容"
+   },
+   "archiveFilterTip": {
+      "message": "喜欢记录通常只支持关键词过滤。"
+   },
+   "archiveFilterTo": {
+      "message": "结束"
+   },
+   "archiveFilterType": {
+      "message": "类型"
+   },
+   "archiveFiltersSection": {
+      "message": "筛选条件"
+   },
+   "archiveImportButton": {
+      "message": "导入"
+   },
+   "archiveImportDescription": {
+      "message": "支持官方 zip、tweets.js 和 like.js。如果当前已有待删除记录，可在导入时选择合并或清空后再导入。"
+   },
+   "archiveImportFailed": {
+      "message": "导入失败"
+   },
+   "archiveImportModeMerge": {
+      "message": "合并导入"
+   },
+   "archiveImportModeMessage": {
+      "message": "检测到已有待删除记录。是先清空再导入，还是与本次导入合并？"
+   },
+   "archiveImportModeReplace": {
+      "message": "清空后导入"
+   },
+   "archiveImportModeTitle": {
+      "message": "导入方式"
+   },
+   "archiveImportResult": {
+      "message": "已导入 $1 条，跳过重复 $2 条，无效 $3 条。"
+   },
+   "archiveImportSection": {
+      "message": "导入文件"
+   },
+   "archiveLoaderDeleted": {
+      "message": "已删除"
+   },
+   "archiveLoaderPending": {
+      "message": "待删除"
+   },
+   "archiveLoaderRecentDeleted": {
+      "message": "最近删除"
+   },
+   "archiveLoaderRunning": {
+      "message": "DeleteTweets 归档模式正在运行..."
+   },
+   "archiveLoaderSkipped": {
+      "message": "已跳过"
+   },
+   "archiveLoginReady": {
+      "message": "已登录 X"
+   },
+   "archiveLoginRequired": {
+      "message": "需要先登录 X"
+   },
+   "archivePageHeading": {
+      "message": "归档管理"
+   },
+   "archivePageSubtitle": {
+      "message": "读取现有待删除队列，导入官方归档文件，并在归档模式下删除已选数据。"
+   },
+   "archivePageTitle": {
+      "message": "归档管理"
+   },
+   "archivePendingSection": {
+      "message": "待删除记录"
+   },
+   "archiveProgressExtracting": {
+      "message": "正在解压 $1（$2/$3）..."
+   },
+   "archiveProgressParsing": {
+      "message": "正在解析... $1 MB / $2 MB"
+   },
+   "archiveProgressReadingZip": {
+      "message": "正在读取 ZIP 目录..."
+   },
+   "archiveRefreshButton": {
+      "message": "刷新"
+   },
+   "archiveResetButton": {
+      "message": "重置"
+   },
+   "archiveSelectFilteredButton": {
+      "message": "选中"
+   },
+   "archiveSelectFilteredSuccess": {
+      "message": "已选中 $1 条记录。"
+   },
+   "archiveSelectionUpdateFailed": {
+      "message": "更新选择状态失败"
+   },
+   "archiveStartDeleteNeedLogin": {
+      "message": "请先登录 X。"
+   },
+   "archiveStartDeleteNeedSelection": {
+      "message": "请先选择待删除记录。"
+   },
+   "archiveSummaryLike": {
+      "message": "喜欢"
+   },
+   "archiveSummaryPending": {
+      "message": "待删除"
+   },
+   "archiveSummaryReply": {
+      "message": "回复"
+   },
+   "archiveSummaryRetweet": {
+      "message": "转推"
+   },
+   "archiveSummarySelected": {
+      "message": "已选中"
+   },
+   "archiveSummaryTweet": {
+      "message": "推文"
+   },
+   "archiveTableContent": {
+      "message": "内容"
+   },
+   "archiveTableCreated": {
+      "message": "时间"
+   },
+   "archiveTableEmpty": {
+      "message": "暂无待删除的归档记录"
+   },
+   "archiveTableEmptyContent": {
+      "message": "（空）"
+   },
+   "archiveTableFails": {
+      "message": "失败"
+   },
+   "archiveTablePick": {
+      "message": "选择"
+   },
+   "archiveTableTweetId": {
+      "message": "推文 ID"
+   },
+   "archiveTableType": {
+      "message": "类型"
+   },
+   "archiveUnselectFilteredButton": {
+      "message": "取消选中"
+   },
+   "archiveUnselectFilteredSuccess": {
+      "message": "已取消选中 $1 条记录。"
+   },
+   "bindlicense": {
+      "message": "绑定许可证"
+   },
+   "clicklogin": {
+      "message": "点击登录 Twitter 后继续"
+   },
+   "deleteAll": {
+      "message": "全部删除"
+   },
+   "deleteByCondition": {
+      "message": "根据条件删除"
+   },
+   "exceptionPlaceholder": {
+      "message": "包含关键词的推文将不被删除"
+   },
+   "exceptionSetting": {
+      "message": "例外设置"
+   },
+   "exceptionTips": {
+      "message": "例外（输入以 ';' 分隔的关键词）"
+   },
+   "exportBackup": {
+      "message": "导出备份"
+   },
+   "exportDeleted": {
+      "message": "导出已删除"
+   },
+   "exportProUser": {
+      "message": "导出（Pro 用户）"
+   },
+   "extensionDescription": {
+      "message": "一键删除推文/转推/回复/喜欢"
+   },
+   "filterConditions": {
+      "message": "过滤条件"
+   },
+   "keywords": {
+      "message": "关键词"
+   },
+   "licenseShort": {
+      "message": "许可证"
+   },
+   "licenseexpired": {
+      "message": "许可证已过期"
+   },
+   "loadingText": {
+      "message": "加载中..."
+   },
+   "message_bindfail": {
+      "message": "绑定失败"
+   },
+   "message_bindsuccess": {
+      "message": "绑定成功"
+   },
+   "message_incorrect_input": {
+      "message": "输入有误"
+   },
+   "message_license_expired": {
+      "message": "您输入的许可证已过期！"
+   },
+   "message_license_invalid": {
+      "message": "许可证无效"
+   },
+   "message_live_daily_limit_reached": {
+      "message": "免费用户每天最多只能删除 50 条数据。今天的额度已经用完。"
+   },
+   "message_networkerror": {
+      "message": "网络错误，请稍后重试"
+   },
+   "message_not_export": {
+      "message": "当前没有可导出的数据"
+   },
+   "message_notbackup": {
+      "message": "您尚未备份推文"
+   },
+   "message_notpermission": {
+      "message": "您无权操作"
+   },
+   "message_right_timeformat": {
+      "message": "请输入正确的时间格式，例如：2023-01-01 00:00:00"
+   },
+   "message_select_search": {
+      "message": "请选择至少一个搜索条件"
+   },
+   "message_select_type_tweet": {
+      "message": "请选择要删除的推文类型"
+   },
+   "message_starttime_endtime": {
+      "message": "开始时间必须早于结束时间"
+   },
+   "message_upgrade_to_pro": {
+      "message": "升级到 Pro 以使用这些功能"
+   },
+   "optionsLikes": {
+      "message": "喜欢"
+   },
+   "optionsReplys": {
+      "message": "回复"
+   },
+   "optionsRetweets": {
+      "message": "转推"
+   },
+   "optionsTweets": {
+      "message": "推文"
+   },
+   "pleaseEnterKeywords": {
+      "message": "请输入关键词"
+   },
+   "promptCancel": {
+      "message": "取消"
+   },
+   "promptConfirm": {
+      "message": "确认"
+   },
+   "promptEnterLicense": {
+      "message": "输入许可证"
+   },
+   "promptLicenseTitle": {
+      "message": "许可证"
+   },
+   "rebindlicense": {
+      "message": "重新绑定许可证"
+   },
+   "recordTypeLike": {
+      "message": "喜欢"
+   },
+   "recordTypeReply": {
+      "message": "回复"
+   },
+   "recordTypeRetweet": {
+      "message": "转推"
+   },
+   "recordTypeTweet": {
+      "message": "推文"
+   },
+   "selecttweettype": {
+      "message": "选择要删除的推文类型"
+   },
+   "startBackup": {
+      "message": "备份"
+   },
+   "startDelete": {
+      "message": "开始"
+   },
+   "timeFrom": {
+      "message": "开始"
+   },
+   "timeTo": {
+      "message": "结束"
+   },
+   "tweetInfoDomForward": {
+      "message": "转发"
+   },
+   "tweetInfoDomLikes": {
+      "message": "喜欢"
+   },
+   "tweetInfoDomReply": {
+      "message": "回复"
+   },
+   "upgradeShort": {
+      "message": "升级"
+   },
+   "upgradetoPro": {
+      "message": "升级到 Pro 版"
+   }
+}

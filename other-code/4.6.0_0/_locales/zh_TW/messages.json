@@ -1,0 +1,368 @@
+{
+   "archiveApplyFilterButton": {
+      "message": "篩選"
+   },
+   "archiveButtonLabel": {
+      "message": "歸檔"
+   },
+   "archiveClearButton": {
+      "message": "清空"
+   },
+   "archiveClearConfirmMessage": {
+      "message": "此操作會從 IndexedDB 中移除目前已選取的待刪除歸檔記錄，是否繼續？"
+   },
+   "archiveClearConfirmTitle": {
+      "message": "提示"
+   },
+   "archiveClearTooltip": {
+      "message": "將目前已選取的待刪除記錄從佇列中移除。"
+   },
+   "archiveDeleteButton": {
+      "message": "刪除"
+   },
+   "archiveDeleteTooltip": {
+      "message": "以歸檔模式刪除目前已選記錄。"
+   },
+   "archiveErrorFileNotReadable": {
+      "message": "讀取檔案「$1」失敗。請重新選擇檔案後再試。如果 ZIP 檔案較大，請先解壓縮後直接上傳 .js 檔案。"
+   },
+   "archiveErrorInvalidPayload": {
+      "message": "歸檔檔案內容格式無效。"
+   },
+   "archiveErrorNoSupportedFiles": {
+      "message": "zip 套件中未找到支援的歸檔檔案。"
+   },
+   "archiveErrorNoValidRecords": {
+      "message": "未解析到有效的歸檔記錄。"
+   },
+   "archiveErrorUnsupportedFile": {
+      "message": "不支援的歸檔檔案：$1"
+   },
+   "archiveFilterDatePlaceholder": {
+      "message": "選填"
+   },
+   "archiveFilterFrom": {
+      "message": "開始"
+   },
+   "archiveFilterKeyword": {
+      "message": "關鍵字"
+   },
+   "archiveFilterKeywordPlaceholder": {
+      "message": "搜尋正文內容"
+   },
+   "archiveFilterTip": {
+      "message": "喜歡記錄通常只支援關鍵字篩選。"
+   },
+   "archiveFilterTo": {
+      "message": "結束"
+   },
+   "archiveFilterType": {
+      "message": "類型"
+   },
+   "archiveFiltersSection": {
+      "message": "篩選條件"
+   },
+   "archiveImportButton": {
+      "message": "匯入"
+   },
+   "archiveImportDescription": {
+      "message": "支援官方 zip、tweets.js 和 like.js。若已有待刪除記錄，可於匯入時選擇合併或先清空再匯入。"
+   },
+   "archiveImportFailed": {
+      "message": "匯入失敗"
+   },
+   "archiveImportModeMerge": {
+      "message": "合併匯入"
+   },
+   "archiveImportModeMessage": {
+      "message": "偵測到已有待刪除記錄。要先清空再匯入，還是與本次匯入合併？"
+   },
+   "archiveImportModeReplace": {
+      "message": "清空後匯入"
+   },
+   "archiveImportModeTitle": {
+      "message": "匯入方式"
+   },
+   "archiveImportResult": {
+      "message": "已匯入 $1 筆，略過重複 $2 筆，無效 $3 筆。"
+   },
+   "archiveImportSection": {
+      "message": "匯入檔案"
+   },
+   "archiveLoaderDeleted": {
+      "message": "已刪除"
+   },
+   "archiveLoaderPending": {
+      "message": "待刪除"
+   },
+   "archiveLoaderRecentDeleted": {
+      "message": "最近刪除"
+   },
+   "archiveLoaderRunning": {
+      "message": "DeleteTweets 歸檔模式正在執行..."
+   },
+   "archiveLoaderSkipped": {
+      "message": "已跳過"
+   },
+   "archiveLoginReady": {
+      "message": "已登入 X"
+   },
+   "archiveLoginRequired": {
+      "message": "需要先登入 X"
+   },
+   "archivePageHeading": {
+      "message": "歸檔管理"
+   },
+   "archivePageSubtitle": {
+      "message": "讀取現有待刪除佇列，匯入官方歸檔檔案，並在歸檔模式下刪除已選資料。"
+   },
+   "archivePageTitle": {
+      "message": "歸檔管理"
+   },
+   "archivePendingSection": {
+      "message": "待刪除記錄"
+   },
+   "archiveProgressExtracting": {
+      "message": "正在解壓縮 $1（$2/$3）..."
+   },
+   "archiveProgressParsing": {
+      "message": "正在解析... $1 MB / $2 MB"
+   },
+   "archiveProgressReadingZip": {
+      "message": "正在讀取 ZIP 目錄..."
+   },
+   "archiveRefreshButton": {
+      "message": "重新整理"
+   },
+   "archiveResetButton": {
+      "message": "重設"
+   },
+   "archiveSelectFilteredButton": {
+      "message": "選取"
+   },
+   "archiveSelectFilteredSuccess": {
+      "message": "已選取 $1 筆記錄。"
+   },
+   "archiveSelectionUpdateFailed": {
+      "message": "更新選取狀態失敗"
+   },
+   "archiveStartDeleteNeedLogin": {
+      "message": "請先登入 X。"
+   },
+   "archiveStartDeleteNeedSelection": {
+      "message": "請先選擇待刪除記錄。"
+   },
+   "archiveSummaryLike": {
+      "message": "喜歡"
+   },
+   "archiveSummaryPending": {
+      "message": "待刪除"
+   },
+   "archiveSummaryReply": {
+      "message": "回覆"
+   },
+   "archiveSummaryRetweet": {
+      "message": "轉推"
+   },
+   "archiveSummarySelected": {
+      "message": "已選取"
+   },
+   "archiveSummaryTweet": {
+      "message": "推文"
+   },
+   "archiveTableContent": {
+      "message": "內容"
+   },
+   "archiveTableCreated": {
+      "message": "時間"
+   },
+   "archiveTableEmpty": {
+      "message": "目前沒有待刪除的歸檔記錄"
+   },
+   "archiveTableEmptyContent": {
+      "message": "（空）"
+   },
+   "archiveTableFails": {
+      "message": "失敗"
+   },
+   "archiveTablePick": {
+      "message": "選擇"
+   },
+   "archiveTableTweetId": {
+      "message": "推文 ID"
+   },
+   "archiveTableType": {
+      "message": "類型"
+   },
+   "archiveUnselectFilteredButton": {
+      "message": "取消選取"
+   },
+   "archiveUnselectFilteredSuccess": {
+      "message": "已取消選取 $1 筆記錄。"
+   },
+   "bindlicense": {
+      "message": "綁定授權"
+   },
+   "clicklogin": {
+      "message": "點擊登入 Twitter 並繼續"
+   },
+   "deleteAll": {
+      "message": "全部刪除"
+   },
+   "deleteByCondition": {
+      "message": "依條件刪除"
+   },
+   "exceptionPlaceholder": {
+      "message": "包含關鍵字的推文將不會被刪除"
+   },
+   "exceptionSetting": {
+      "message": "例外設定"
+   },
+   "exceptionTips": {
+      "message": "例外（輸入以「;」分隔的關鍵字）"
+   },
+   "exportBackup": {
+      "message": "匯出備份"
+   },
+   "exportDeleted": {
+      "message": "匯出已刪除"
+   },
+   "exportProUser": {
+      "message": "匯出（Pro 用戶）"
+   },
+   "extensionDescription": {
+      "message": "一鍵刪除推文/轉推/回覆/喜歡"
+   },
+   "filterConditions": {
+      "message": "篩選條件"
+   },
+   "keywords": {
+      "message": "關鍵字"
+   },
+   "licenseShort": {
+      "message": "授權"
+   },
+   "licenseexpired": {
+      "message": "授權已過期"
+   },
+   "loadingText": {
+      "message": "載入中..."
+   },
+   "message_bindfail": {
+      "message": "綁定失敗"
+   },
+   "message_bindsuccess": {
+      "message": "綁定成功"
+   },
+   "message_incorrect_input": {
+      "message": "輸入錯誤"
+   },
+   "message_license_expired": {
+      "message": "您輸入的授權已過期！"
+   },
+   "message_license_invalid": {
+      "message": "授權無效"
+   },
+   "message_live_daily_limit_reached": {
+      "message": "免費用戶每天最多只能刪除 50 筆資料。今天的額度已經用完。"
+   },
+   "message_networkerror": {
+      "message": "網路錯誤，請稍後再試"
+   },
+   "message_not_export": {
+      "message": "目前沒有可匯出的資料"
+   },
+   "message_notbackup": {
+      "message": "您尚未備份推文"
+   },
+   "message_notpermission": {
+      "message": "無權限操作"
+   },
+   "message_right_timeformat": {
+      "message": "請輸入有效的時間格式，例如：2023-01-01 00:00:00"
+   },
+   "message_select_search": {
+      "message": "請至少選擇一個搜尋條件"
+   },
+   "message_select_type_tweet": {
+      "message": "請選擇要刪除的推文類型"
+   },
+   "message_starttime_endtime": {
+      "message": "開始時間必須早於結束時間"
+   },
+   "message_upgrade_to_pro": {
+      "message": "升級至 Pro 帳戶以使用這些功能"
+   },
+   "optionsLikes": {
+      "message": "喜歡"
+   },
+   "optionsReplys": {
+      "message": "回覆"
+   },
+   "optionsRetweets": {
+      "message": "轉推"
+   },
+   "optionsTweets": {
+      "message": "推文"
+   },
+   "pleaseEnterKeywords": {
+      "message": "請輸入關鍵字"
+   },
+   "promptCancel": {
+      "message": "取消"
+   },
+   "promptConfirm": {
+      "message": "確認"
+   },
+   "promptEnterLicense": {
+      "message": "輸入授權"
+   },
+   "promptLicenseTitle": {
+      "message": "授權"
+   },
+   "rebindlicense": {
+      "message": "重新綁定授權"
+   },
+   "recordTypeLike": {
+      "message": "喜歡"
+   },
+   "recordTypeReply": {
+      "message": "回覆"
+   },
+   "recordTypeRetweet": {
+      "message": "轉推"
+   },
+   "recordTypeTweet": {
+      "message": "推文"
+   },
+   "selecttweettype": {
+      "message": "選擇要刪除的推文類型"
+   },
+   "startBackup": {
+      "message": "備份"
+   },
+   "startDelete": {
+      "message": "開始"
+   },
+   "timeFrom": {
+      "message": "開始時間"
+   },
+   "timeTo": {
+      "message": "結束時間"
+   },
+   "tweetInfoDomForward": {
+      "message": "轉發"
+   },
+   "tweetInfoDomLikes": {
+      "message": "喜歡"
+   },
+   "tweetInfoDomReply": {
+      "message": "回覆"
+   },
+   "upgradeShort": {
+      "message": "升級"
+   },
+   "upgradetoPro": {
+      "message": "升級為專業版"
+   }
+}

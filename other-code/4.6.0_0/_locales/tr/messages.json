@@ -1,0 +1,368 @@
+{
+   "archiveApplyFilterButton": {
+      "message": "Filtrele"
+   },
+   "archiveButtonLabel": {
+      "message": "Arşiv"
+   },
+   "archiveClearButton": {
+      "message": "Temizle"
+   },
+   "archiveClearConfirmMessage": {
+      "message": "Bu işlem, IndexedDB'den seçili tüm bekleyen arşiv kayıtlarını kaldırır. Devam edilsin mi?"
+   },
+   "archiveClearConfirmTitle": {
+      "message": "Uyarı"
+   },
+   "archiveClearTooltip": {
+      "message": "Seçili tüm bekleyen kayıtları kuyruktan kaldırın."
+   },
+   "archiveDeleteButton": {
+      "message": "Sil"
+   },
+   "archiveDeleteTooltip": {
+      "message": "Seçili tüm bekleyen kayıtları arşiv modunda silin."
+   },
+   "archiveErrorFileNotReadable": {
+      "message": "\"$1\" dosyası okunamadı. Lütfen yeniden seçin. Büyük ZIP'ler için .js dosyalarını doğrudan yükleyin."
+   },
+   "archiveErrorInvalidPayload": {
+      "message": "Arşiv dosyasının içeriği geçersiz."
+   },
+   "archiveErrorNoSupportedFiles": {
+      "message": "Zip içinde desteklenen arşiv dosyası bulunamadı."
+   },
+   "archiveErrorNoValidRecords": {
+      "message": "Geçerli arşiv kaydı bulunamadı."
+   },
+   "archiveErrorUnsupportedFile": {
+      "message": "Desteklenmeyen arşiv dosyası: $1"
+   },
+   "archiveFilterDatePlaceholder": {
+      "message": "İsteğe bağlı"
+   },
+   "archiveFilterFrom": {
+      "message": "Başlangıç"
+   },
+   "archiveFilterKeyword": {
+      "message": "Anahtar kelime"
+   },
+   "archiveFilterKeywordPlaceholder": {
+      "message": "İçerikte ara"
+   },
+   "archiveFilterTip": {
+      "message": "Beğeniler genellikle yalnızca anahtar kelime filtresini destekler."
+   },
+   "archiveFilterTo": {
+      "message": "Bitiş"
+   },
+   "archiveFilterType": {
+      "message": "Tür"
+   },
+   "archiveFiltersSection": {
+      "message": "Filtreler"
+   },
+   "archiveImportButton": {
+      "message": "İçe Aktar"
+   },
+   "archiveImportDescription": {
+      "message": "Resmi zip, tweets.js ve like.js destekler. Bekleyen kayıtlar varsa içe aktarmadan önce birleştirebilir veya temizleyebilirsiniz."
+   },
+   "archiveImportFailed": {
+      "message": "İçe aktarma başarısız"
+   },
+   "archiveImportModeMerge": {
+      "message": "Birleştir"
+   },
+   "archiveImportModeMessage": {
+      "message": "Bekleyen kayıtlar bulundu. Önce temizlensin mi yoksa yeni içe aktarmayla birleştirilsin mi?"
+   },
+   "archiveImportModeReplace": {
+      "message": "Temizle ve İçe Aktar"
+   },
+   "archiveImportModeTitle": {
+      "message": "İçe Aktarma Modu"
+   },
+   "archiveImportResult": {
+      "message": "$1 içe aktarıldı, $2 yinelenen atlandı, $3 geçersiz."
+   },
+   "archiveImportSection": {
+      "message": "Dosyaları İçe Aktar"
+   },
+   "archiveLoaderDeleted": {
+      "message": "Silindi"
+   },
+   "archiveLoaderPending": {
+      "message": "Beklemede"
+   },
+   "archiveLoaderRecentDeleted": {
+      "message": "Son Silinenler"
+   },
+   "archiveLoaderRunning": {
+      "message": "DeleteTweets arşiv modu çalışıyor..."
+   },
+   "archiveLoaderSkipped": {
+      "message": "Atlandı"
+   },
+   "archiveLoginReady": {
+      "message": "X'e giriş yapıldı"
+   },
+   "archiveLoginRequired": {
+      "message": "X'e giriş gerekli"
+   },
+   "archivePageHeading": {
+      "message": "Arşiv Yöneticisi"
+   },
+   "archivePageSubtitle": {
+      "message": "Mevcut bekleyen kuyruğu yükleyin, resmi arşiv dosyalarını içe aktarın ve seçilen öğeleri arşiv modunda silin."
+   },
+   "archivePageTitle": {
+      "message": "Arşiv Yöneticisi"
+   },
+   "archivePendingSection": {
+      "message": "Bekleyen Kayıtlar"
+   },
+   "archiveProgressExtracting": {
+      "message": "$1 çıkarılıyor ($2/$3)..."
+   },
+   "archiveProgressParsing": {
+      "message": "Ayrıştırılıyor... $1 MB / $2 MB"
+   },
+   "archiveProgressReadingZip": {
+      "message": "ZIP dizini okunuyor..."
+   },
+   "archiveRefreshButton": {
+      "message": "Yenile"
+   },
+   "archiveResetButton": {
+      "message": "Sıfırla"
+   },
+   "archiveSelectFilteredButton": {
+      "message": "Seç"
+   },
+   "archiveSelectFilteredSuccess": {
+      "message": "$1 kayıt seçildi."
+   },
+   "archiveSelectionUpdateFailed": {
+      "message": "Seçim güncellenemedi"
+   },
+   "archiveStartDeleteNeedLogin": {
+      "message": "Lütfen önce X'e giriş yapın."
+   },
+   "archiveStartDeleteNeedSelection": {
+      "message": "Başlamadan önce bekleyen kayıt seçin."
+   },
+   "archiveSummaryLike": {
+      "message": "Beğeni"
+   },
+   "archiveSummaryPending": {
+      "message": "Beklemede"
+   },
+   "archiveSummaryReply": {
+      "message": "Yanıt"
+   },
+   "archiveSummaryRetweet": {
+      "message": "Retweet"
+   },
+   "archiveSummarySelected": {
+      "message": "Seçili"
+   },
+   "archiveSummaryTweet": {
+      "message": "Tweet"
+   },
+   "archiveTableContent": {
+      "message": "İçerik"
+   },
+   "archiveTableCreated": {
+      "message": "Oluşturulma"
+   },
+   "archiveTableEmpty": {
+      "message": "Bekleyen arşiv kaydı yok"
+   },
+   "archiveTableEmptyContent": {
+      "message": "(boş)"
+   },
+   "archiveTableFails": {
+      "message": "Başarısız"
+   },
+   "archiveTablePick": {
+      "message": "Seç"
+   },
+   "archiveTableTweetId": {
+      "message": "Tweet ID"
+   },
+   "archiveTableType": {
+      "message": "Tür"
+   },
+   "archiveUnselectFilteredButton": {
+      "message": "Seçimi Kaldır"
+   },
+   "archiveUnselectFilteredSuccess": {
+      "message": "$1 kaydın seçimi kaldırıldı."
+   },
+   "bindlicense": {
+      "message": "Lisans bağla"
+   },
+   "clicklogin": {
+      "message": "Devam etmek için Twitter'a giriş yapın"
+   },
+   "deleteAll": {
+      "message": "Tümünü sil"
+   },
+   "deleteByCondition": {
+      "message": "Koşula göre sil"
+   },
+   "exceptionPlaceholder": {
+      "message": "Bu anahtar kelimeleri içeren tweet'ler silinmeyecek"
+   },
+   "exceptionSetting": {
+      "message": "İstisna ayarları"
+   },
+   "exceptionTips": {
+      "message": "İstisna (';' ile ayrılmış anahtar kelimeleri girin)"
+   },
+   "exportBackup": {
+      "message": "Yedeği dışa aktar"
+   },
+   "exportDeleted": {
+      "message": "Silinenleri dışa aktar"
+   },
+   "exportProUser": {
+      "message": "Dışa aktar (Pro kullanıcı)"
+   },
+   "extensionDescription": {
+      "message": "Tek tıklamayla tweet/retweet/yanıt/beğeni silme"
+   },
+   "filterConditions": {
+      "message": "Filtre koşulları"
+   },
+   "keywords": {
+      "message": "Anahtar kelimeler"
+   },
+   "licenseShort": {
+      "message": "Lisans"
+   },
+   "licenseexpired": {
+      "message": "Lisans süresi doldu"
+   },
+   "loadingText": {
+      "message": "Yükleniyor..."
+   },
+   "message_bindfail": {
+      "message": "Bağlama başarısız"
+   },
+   "message_bindsuccess": {
+      "message": "Başarıyla bağlandı"
+   },
+   "message_incorrect_input": {
+      "message": "Hatalı giriş"
+   },
+   "message_license_expired": {
+      "message": "Girdiğiniz lisansın süresi doldu!"
+   },
+   "message_license_invalid": {
+      "message": "Lisans geçersiz"
+   },
+   "message_live_daily_limit_reached": {
+      "message": "Ücretsiz kullanıcılar günde en fazla 50 öğe silebilir. Bugünkü limite ulaşıldı."
+   },
+   "message_networkerror": {
+      "message": "Ağ hatası. Daha sonra tekrar deneyin"
+   },
+   "message_not_export": {
+      "message": "Şu anda dışa aktarılabilir veri yok"
+   },
+   "message_notbackup": {
+      "message": "Henüz tweet'lerinizi yedeklemediniz"
+   },
+   "message_notpermission": {
+      "message": "Bu işlem için izniniz yok"
+   },
+   "message_right_timeformat": {
+      "message": "Geçerli bir zaman formatı girin, örneğin: 2023-01-01 00:00:00"
+   },
+   "message_select_search": {
+      "message": "Lütfen en az bir arama koşulu seçin"
+   },
+   "message_select_type_tweet": {
+      "message": "Lütfen silinecek tweet türünü seçin"
+   },
+   "message_starttime_endtime": {
+      "message": "Başlangıç zamanı bitiş zamanından önce olmalıdır"
+   },
+   "message_upgrade_to_pro": {
+      "message": "Bu özelliklere erişmek için Pro hesaba yükseltin"
+   },
+   "optionsLikes": {
+      "message": "Beğeniler"
+   },
+   "optionsReplys": {
+      "message": "Yanıtlar"
+   },
+   "optionsRetweets": {
+      "message": "Retweet'ler"
+   },
+   "optionsTweets": {
+      "message": "Tweet'ler"
+   },
+   "pleaseEnterKeywords": {
+      "message": "Anahtar kelimeleri girin"
+   },
+   "promptCancel": {
+      "message": "İptal"
+   },
+   "promptConfirm": {
+      "message": "Onayla"
+   },
+   "promptEnterLicense": {
+      "message": "Lisansı girin"
+   },
+   "promptLicenseTitle": {
+      "message": "Lisans"
+   },
+   "rebindlicense": {
+      "message": "Lisansı yeniden bağla"
+   },
+   "recordTypeLike": {
+      "message": "Beğeni"
+   },
+   "recordTypeReply": {
+      "message": "Yanıt"
+   },
+   "recordTypeRetweet": {
+      "message": "Retweet"
+   },
+   "recordTypeTweet": {
+      "message": "Tweet"
+   },
+   "selecttweettype": {
+      "message": "Silinecek tweet türünü seçin"
+   },
+   "startBackup": {
+      "message": "Yedekle"
+   },
+   "startDelete": {
+      "message": "Başlat"
+   },
+   "timeFrom": {
+      "message": "Başlangıç"
+   },
+   "timeTo": {
+      "message": "Bitiş"
+   },
+   "tweetInfoDomForward": {
+      "message": "İlet"
+   },
+   "tweetInfoDomLikes": {
+      "message": "Beğeniler"
+   },
+   "tweetInfoDomReply": {
+      "message": "Yanıt"
+   },
+   "upgradeShort": {
+      "message": "Yükselt"
+   },
+   "upgradetoPro": {
+      "message": "Pro'ya yükselt"
+   }
+}

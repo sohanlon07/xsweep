@@ -1,12 +1,13 @@
 {
   "name": "tweet-cleaner-extension",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "build": "vite build",
     "check": "svelte-check --tsconfig ./tsconfig.json",
-    "test": "vitest run"
+    "test": "vitest run",
+    "validate:package": "node scripts/validate-package.mjs"
   },
   "dependencies": {
     "@zip.js/zip.js": "^2.7.52",

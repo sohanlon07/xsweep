@@ -1,0 +1,368 @@
+{
+   "archiveApplyFilterButton": {
+      "message": "絞り込み"
+   },
+   "archiveButtonLabel": {
+      "message": "アーカイブ"
+   },
+   "archiveClearButton": {
+      "message": "クリア"
+   },
+   "archiveClearConfirmMessage": {
+      "message": "選択中の削除待ちアーカイブレコードを IndexedDB から削除します。続行しますか？"
+   },
+   "archiveClearConfirmTitle": {
+      "message": "警告"
+   },
+   "archiveClearTooltip": {
+      "message": "選択中の削除待ちレコードをキューから削除します。"
+   },
+   "archiveDeleteButton": {
+      "message": "削除"
+   },
+   "archiveDeleteTooltip": {
+      "message": "選択中の削除待ちレコードをアーカイブモードで削除します。"
+   },
+   "archiveErrorFileNotReadable": {
+      "message": "ファイル「$1」の読み込みに失敗しました。再選択してください。大きい ZIP の場合は解凍して .js を直接アップロードしてください。"
+   },
+   "archiveErrorInvalidPayload": {
+      "message": "アーカイブファイルの内容が無効です。"
+   },
+   "archiveErrorNoSupportedFiles": {
+      "message": "zip パッケージにサポートされているアーカイブファイルが見つかりません。"
+   },
+   "archiveErrorNoValidRecords": {
+      "message": "有効なアーカイブレコードが見つかりませんでした。"
+   },
+   "archiveErrorUnsupportedFile": {
+      "message": "サポートされていないアーカイブファイル: $1"
+   },
+   "archiveFilterDatePlaceholder": {
+      "message": "任意"
+   },
+   "archiveFilterFrom": {
+      "message": "開始"
+   },
+   "archiveFilterKeyword": {
+      "message": "キーワード"
+   },
+   "archiveFilterKeywordPlaceholder": {
+      "message": "本文を検索"
+   },
+   "archiveFilterTip": {
+      "message": "いいね記録は通常キーワード検索のみ対応しています。"
+   },
+   "archiveFilterTo": {
+      "message": "終了"
+   },
+   "archiveFilterType": {
+      "message": "種類"
+   },
+   "archiveFiltersSection": {
+      "message": "フィルター"
+   },
+   "archiveImportButton": {
+      "message": "インポート"
+   },
+   "archiveImportDescription": {
+      "message": "公式 zip、tweets.js、like.js に対応。既存の削除待ちレコードがある場合、インポート時にマージか先にクリアするかを選べます。"
+   },
+   "archiveImportFailed": {
+      "message": "インポートに失敗しました"
+   },
+   "archiveImportModeMerge": {
+      "message": "マージ"
+   },
+   "archiveImportModeMessage": {
+      "message": "既存の削除待ちレコードが見つかりました。先にクリアしますか、それも今回のインポートとマージしますか？"
+   },
+   "archiveImportModeReplace": {
+      "message": "クリアしてインポート"
+   },
+   "archiveImportModeTitle": {
+      "message": "インポート方式"
+   },
+   "archiveImportResult": {
+      "message": "$1 件をインポートし、重複 $2 件をスキップ、無効 $3 件。"
+   },
+   "archiveImportSection": {
+      "message": "ファイルのインポート"
+   },
+   "archiveLoaderDeleted": {
+      "message": "削除済み"
+   },
+   "archiveLoaderPending": {
+      "message": "削除待ち"
+   },
+   "archiveLoaderRecentDeleted": {
+      "message": "最近削除"
+   },
+   "archiveLoaderRunning": {
+      "message": "DeleteTweets のアーカイブモードを実行中..."
+   },
+   "archiveLoaderSkipped": {
+      "message": "スキップ"
+   },
+   "archiveLoginReady": {
+      "message": "X ログイン済み"
+   },
+   "archiveLoginRequired": {
+      "message": "X へのログインが必要です"
+   },
+   "archivePageHeading": {
+      "message": "アーカイブ管理"
+   },
+   "archivePageSubtitle": {
+      "message": "既存の削除待ちキューを読み込み、公式アーカイブファイルをインポートし、アーカイブモードで選択項目を削除します。"
+   },
+   "archivePageTitle": {
+      "message": "アーカイブ管理"
+   },
+   "archivePendingSection": {
+      "message": "削除待ちレコード"
+   },
+   "archiveProgressExtracting": {
+      "message": "$1 を展開中 ($2/$3)..."
+   },
+   "archiveProgressParsing": {
+      "message": "解析中... $1 MB / $2 MB"
+   },
+   "archiveProgressReadingZip": {
+      "message": "ZIP ディレクトリを読み込み中..."
+   },
+   "archiveRefreshButton": {
+      "message": "更新"
+   },
+   "archiveResetButton": {
+      "message": "リセット"
+   },
+   "archiveSelectFilteredButton": {
+      "message": "選択"
+   },
+   "archiveSelectFilteredSuccess": {
+      "message": "$1 件のレコードを選択しました。"
+   },
+   "archiveSelectionUpdateFailed": {
+      "message": "選択状態の更新に失敗しました"
+   },
+   "archiveStartDeleteNeedLogin": {
+      "message": "先に X にログインしてください。"
+   },
+   "archiveStartDeleteNeedSelection": {
+      "message": "開始前に削除待ちレコードを選択してください。"
+   },
+   "archiveSummaryLike": {
+      "message": "いいね"
+   },
+   "archiveSummaryPending": {
+      "message": "削除待ち"
+   },
+   "archiveSummaryReply": {
+      "message": "返信"
+   },
+   "archiveSummaryRetweet": {
+      "message": "リツイート"
+   },
+   "archiveSummarySelected": {
+      "message": "選択中"
+   },
+   "archiveSummaryTweet": {
+      "message": "ツイート"
+   },
+   "archiveTableContent": {
+      "message": "内容"
+   },
+   "archiveTableCreated": {
+      "message": "作成日時"
+   },
+   "archiveTableEmpty": {
+      "message": "削除待ちのアーカイブレコードはありません"
+   },
+   "archiveTableEmptyContent": {
+      "message": "(空)"
+   },
+   "archiveTableFails": {
+      "message": "失敗"
+   },
+   "archiveTablePick": {
+      "message": "選択"
+   },
+   "archiveTableTweetId": {
+      "message": "ツイートID"
+   },
+   "archiveTableType": {
+      "message": "種類"
+   },
+   "archiveUnselectFilteredButton": {
+      "message": "選択解除"
+   },
+   "archiveUnselectFilteredSuccess": {
+      "message": "$1 件のレコードの選択を解除しました。"
+   },
+   "bindlicense": {
+      "message": "ライセンスを紐付ける"
+   },
+   "clicklogin": {
+      "message": "Twitterにログインして続行してください"
+   },
+   "deleteAll": {
+      "message": "すべて削除"
+   },
+   "deleteByCondition": {
+      "message": "条件を指定して削除"
+   },
+   "exceptionPlaceholder": {
+      "message": "キーワードを含むツイートは削除されません"
+   },
+   "exceptionSetting": {
+      "message": "例外設定"
+   },
+   "exceptionTips": {
+      "message": "例外（「;」で区切ってキーワードを入力）"
+   },
+   "exportBackup": {
+      "message": "バックアップをエクスポート"
+   },
+   "exportDeleted": {
+      "message": "削除済みをエクスポート"
+   },
+   "exportProUser": {
+      "message": "エクスポート（Proユーザー）"
+   },
+   "extensionDescription": {
+      "message": "ワンクリックでツイート/リツイート/返信/いいねを削除"
+   },
+   "filterConditions": {
+      "message": "フィルター条件"
+   },
+   "keywords": {
+      "message": "キーワード"
+   },
+   "licenseShort": {
+      "message": "ライセンス"
+   },
+   "licenseexpired": {
+      "message": "ライセンスの有効期限が切れています"
+   },
+   "loadingText": {
+      "message": "読み込み中..."
+   },
+   "message_bindfail": {
+      "message": "紐付けに失敗しました"
+   },
+   "message_bindsuccess": {
+      "message": "紐付けに成功しました"
+   },
+   "message_incorrect_input": {
+      "message": "入力が正しくありません"
+   },
+   "message_license_expired": {
+      "message": "入力したライセンスの有効期限が切れています！"
+   },
+   "message_license_invalid": {
+      "message": "ライセンスが無効です"
+   },
+   "message_live_daily_limit_reached": {
+      "message": "無料ユーザーは1日に最大50件まで削除できます。本日の上限に達しました。"
+   },
+   "message_networkerror": {
+      "message": "ネットワークエラーが発生しました。後でもう一度お試しください"
+   },
+   "message_not_export": {
+      "message": "現在エクスポート可能なデータがありません"
+   },
+   "message_notbackup": {
+      "message": "まだツイートをバックアップしていません"
+   },
+   "message_notpermission": {
+      "message": "操作する権限がありません"
+   },
+   "message_right_timeformat": {
+      "message": "有効な時刻形式を入力してください。例：2023-01-01 00:00:00"
+   },
+   "message_select_search": {
+      "message": "少なくとも1つの検索条件を選択してください"
+   },
+   "message_select_type_tweet": {
+      "message": "削除するツイートの種類を選択してください"
+   },
+   "message_starttime_endtime": {
+      "message": "開始時刻は終了時刻より前である必要があります"
+   },
+   "message_upgrade_to_pro": {
+      "message": "これらの機能を利用するにはProアカウントにアップグレードしてください"
+   },
+   "optionsLikes": {
+      "message": "いいね"
+   },
+   "optionsReplys": {
+      "message": "返信"
+   },
+   "optionsRetweets": {
+      "message": "リツイート"
+   },
+   "optionsTweets": {
+      "message": "ツイート"
+   },
+   "pleaseEnterKeywords": {
+      "message": "キーワードを入力してください"
+   },
+   "promptCancel": {
+      "message": "キャンセル"
+   },
+   "promptConfirm": {
+      "message": "確認"
+   },
+   "promptEnterLicense": {
+      "message": "ライセンスを入力"
+   },
+   "promptLicenseTitle": {
+      "message": "ライセンス"
+   },
+   "rebindlicense": {
+      "message": "ライセンスを再紐付け"
+   },
+   "recordTypeLike": {
+      "message": "いいね"
+   },
+   "recordTypeReply": {
+      "message": "返信"
+   },
+   "recordTypeRetweet": {
+      "message": "リツイート"
+   },
+   "recordTypeTweet": {
+      "message": "ツイート"
+   },
+   "selecttweettype": {
+      "message": "削除するツイートの種類を選択"
+   },
+   "startBackup": {
+      "message": "バックアップ"
+   },
+   "startDelete": {
+      "message": "開始"
+   },
+   "timeFrom": {
+      "message": "開始"
+   },
+   "timeTo": {
+      "message": "終了"
+   },
+   "tweetInfoDomForward": {
+      "message": "転送"
+   },
+   "tweetInfoDomLikes": {
+      "message": "いいね"
+   },
+   "tweetInfoDomReply": {
+      "message": "返信"
+   },
+   "upgradeShort": {
+      "message": "アップグレード"
+   },
+   "upgradetoPro": {
+      "message": "Proにアップグレード"
+   }
+}

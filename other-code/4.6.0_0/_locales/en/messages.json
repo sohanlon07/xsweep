@@ -1,0 +1,368 @@
+{
+   "archiveApplyFilterButton": {
+      "message": "Filter"
+   },
+   "archiveButtonLabel": {
+      "message": "Archive"
+   },
+   "archiveClearButton": {
+      "message": "Clear"
+   },
+   "archiveClearConfirmMessage": {
+      "message": "This will remove all selected pending archive records from IndexedDB. Continue?"
+   },
+   "archiveClearConfirmTitle": {
+      "message": "Warning"
+   },
+   "archiveClearTooltip": {
+      "message": "Remove all selected pending records from the queue."
+   },
+   "archiveDeleteButton": {
+      "message": "Delete"
+   },
+   "archiveDeleteTooltip": {
+      "message": "Delete all selected pending records in archive mode."
+   },
+   "archiveErrorFileNotReadable": {
+      "message": "Failed to read file \"$1\". Please re-select the file and try again. For large ZIP files, try extracting and uploading the .js files directly."
+   },
+   "archiveErrorInvalidPayload": {
+      "message": "Archive file payload is invalid."
+   },
+   "archiveErrorNoSupportedFiles": {
+      "message": "No supported archive files were found in the zip package."
+   },
+   "archiveErrorNoValidRecords": {
+      "message": "No valid archive records were found."
+   },
+   "archiveErrorUnsupportedFile": {
+      "message": "Unsupported archive file: $1"
+   },
+   "archiveFilterDatePlaceholder": {
+      "message": "Optional"
+   },
+   "archiveFilterFrom": {
+      "message": "From"
+   },
+   "archiveFilterKeyword": {
+      "message": "Keyword"
+   },
+   "archiveFilterKeywordPlaceholder": {
+      "message": "Search text content"
+   },
+   "archiveFilterTip": {
+      "message": "Like records usually only support keyword filtering."
+   },
+   "archiveFilterTo": {
+      "message": "To"
+   },
+   "archiveFilterType": {
+      "message": "Type"
+   },
+   "archiveFiltersSection": {
+      "message": "Filters"
+   },
+   "archiveImportButton": {
+      "message": "Import"
+   },
+   "archiveImportDescription": {
+      "message": "Supports official zip, tweets.js, and like.js. When pending records already exist you can choose to merge or to clear them before importing."
+   },
+   "archiveImportFailed": {
+      "message": "Import failed"
+   },
+   "archiveImportModeMerge": {
+      "message": "Merge"
+   },
+   "archiveImportModeMessage": {
+      "message": "Existing pending records detected. Clear them first or merge with the new import?"
+   },
+   "archiveImportModeReplace": {
+      "message": "Clear & Import"
+   },
+   "archiveImportModeTitle": {
+      "message": "Import Mode"
+   },
+   "archiveImportResult": {
+      "message": "Imported $1, skipped duplicates $2, invalid $3."
+   },
+   "archiveImportSection": {
+      "message": "Import Files"
+   },
+   "archiveLoaderDeleted": {
+      "message": "Deleted"
+   },
+   "archiveLoaderPending": {
+      "message": "Pending"
+   },
+   "archiveLoaderRecentDeleted": {
+      "message": "Recently Deleted"
+   },
+   "archiveLoaderRunning": {
+      "message": "DeleteTweets archive mode is running..."
+   },
+   "archiveLoaderSkipped": {
+      "message": "Skipped"
+   },
+   "archiveLoginReady": {
+      "message": "X Login Ready"
+   },
+   "archiveLoginRequired": {
+      "message": "X Login Required"
+   },
+   "archivePageHeading": {
+      "message": "Archive Manager"
+   },
+   "archivePageSubtitle": {
+      "message": "Load existing pending records, import official archive files, and delete selected items in archive mode."
+   },
+   "archivePageTitle": {
+      "message": "Archive Manager"
+   },
+   "archivePendingSection": {
+      "message": "Pending Records"
+   },
+   "archiveProgressExtracting": {
+      "message": "Extracting $1 ($2/$3)..."
+   },
+   "archiveProgressParsing": {
+      "message": "Parsing... $1 MB / $2 MB"
+   },
+   "archiveProgressReadingZip": {
+      "message": "Reading ZIP directory..."
+   },
+   "archiveRefreshButton": {
+      "message": "Refresh"
+   },
+   "archiveResetButton": {
+      "message": "Reset"
+   },
+   "archiveSelectFilteredButton": {
+      "message": "Select"
+   },
+   "archiveSelectFilteredSuccess": {
+      "message": "Selected $1 records."
+   },
+   "archiveSelectionUpdateFailed": {
+      "message": "Selection update failed"
+   },
+   "archiveStartDeleteNeedLogin": {
+      "message": "Please login to X first."
+   },
+   "archiveStartDeleteNeedSelection": {
+      "message": "Please select pending records before starting."
+   },
+   "archiveSummaryLike": {
+      "message": "Like"
+   },
+   "archiveSummaryPending": {
+      "message": "Pending"
+   },
+   "archiveSummaryReply": {
+      "message": "Reply"
+   },
+   "archiveSummaryRetweet": {
+      "message": "Retweet"
+   },
+   "archiveSummarySelected": {
+      "message": "Selected"
+   },
+   "archiveSummaryTweet": {
+      "message": "Tweet"
+   },
+   "archiveTableContent": {
+      "message": "Content"
+   },
+   "archiveTableCreated": {
+      "message": "Created"
+   },
+   "archiveTableEmpty": {
+      "message": "No pending archive records"
+   },
+   "archiveTableEmptyContent": {
+      "message": "(empty)"
+   },
+   "archiveTableFails": {
+      "message": "Fails"
+   },
+   "archiveTablePick": {
+      "message": "Pick"
+   },
+   "archiveTableTweetId": {
+      "message": "Tweet ID"
+   },
+   "archiveTableType": {
+      "message": "Type"
+   },
+   "archiveUnselectFilteredButton": {
+      "message": "Unselect"
+   },
+   "archiveUnselectFilteredSuccess": {
+      "message": "Unselected $1 records."
+   },
+   "bindlicense": {
+      "message": "Bind license"
+   },
+   "clicklogin": {
+      "message": "Click to login to Twitter and continue."
+   },
+   "deleteAll": {
+      "message": "Delete all"
+   },
+   "deleteByCondition": {
+      "message": "Delete by condition"
+   },
+   "exceptionPlaceholder": {
+      "message": "Tweets containing keywords will not be deleted"
+   },
+   "exceptionSetting": {
+      "message": "Exception Setting"
+   },
+   "exceptionTips": {
+      "message": "Exception(Enter keywords separated by ';')"
+   },
+   "exportBackup": {
+      "message": "Export Backup"
+   },
+   "exportDeleted": {
+      "message": "Export Deleted"
+   },
+   "exportProUser": {
+      "message": "Export(Pro User)"
+   },
+   "extensionDescription": {
+      "message": "One-click delete tweets/retweets/replies/likes"
+   },
+   "filterConditions": {
+      "message": "Filter conditions"
+   },
+   "keywords": {
+      "message": "Keywords"
+   },
+   "licenseShort": {
+      "message": "License"
+   },
+   "licenseexpired": {
+      "message": "License expired"
+   },
+   "loadingText": {
+      "message": "Loading..."
+   },
+   "message_bindfail": {
+      "message": "Bind fail"
+   },
+   "message_bindsuccess": {
+      "message": "Bind success"
+   },
+   "message_incorrect_input": {
+      "message": "Incorrect input"
+   },
+   "message_license_expired": {
+      "message": "The license you entered has expired!"
+   },
+   "message_license_invalid": {
+      "message": "The license is invalid"
+   },
+   "message_live_daily_limit_reached": {
+      "message": "Free users can delete up to 50 items per day. Today's limit has been reached."
+   },
+   "message_networkerror": {
+      "message": "Network error,Try again later."
+   },
+   "message_not_export": {
+      "message": "No exportable data currently."
+   },
+   "message_notbackup": {
+      "message": "You haven't backed up tweets yet"
+   },
+   "message_notpermission": {
+      "message": "No permission to operate."
+   },
+   "message_right_timeformat": {
+      "message": "Enter a valid time format, like: 2023-01-01 00:00:00."
+   },
+   "message_select_search": {
+      "message": "Please select at least one search condition."
+   },
+   "message_select_type_tweet": {
+      "message": "Please select the type of tweets to be deleted"
+   },
+   "message_starttime_endtime": {
+      "message": "Start time must be earlier than end time"
+   },
+   "message_upgrade_to_pro": {
+      "message": "Upgrade to a Pro account to access these features."
+   },
+   "optionsLikes": {
+      "message": "Likes"
+   },
+   "optionsReplys": {
+      "message": "Replies"
+   },
+   "optionsRetweets": {
+      "message": "Retweets"
+   },
+   "optionsTweets": {
+      "message": "Tweets"
+   },
+   "pleaseEnterKeywords": {
+      "message": "Please enter keywords"
+   },
+   "promptCancel": {
+      "message": "Cancel"
+   },
+   "promptConfirm": {
+      "message": "Confirm"
+   },
+   "promptEnterLicense": {
+      "message": "Enter the license"
+   },
+   "promptLicenseTitle": {
+      "message": "License"
+   },
+   "rebindlicense": {
+      "message": "Rebind license"
+   },
+   "recordTypeLike": {
+      "message": "Like"
+   },
+   "recordTypeReply": {
+      "message": "Reply"
+   },
+   "recordTypeRetweet": {
+      "message": "Retweet"
+   },
+   "recordTypeTweet": {
+      "message": "Tweet"
+   },
+   "selecttweettype": {
+      "message": "select the type of tweets to be deleted"
+   },
+   "startBackup": {
+      "message": "Backup"
+   },
+   "startDelete": {
+      "message": "Start"
+   },
+   "timeFrom": {
+      "message": "From"
+   },
+   "timeTo": {
+      "message": "To"
+   },
+   "tweetInfoDomForward": {
+      "message": "Forward"
+   },
+   "tweetInfoDomLikes": {
+      "message": "Likes"
+   },
+   "tweetInfoDomReply": {
+      "message": "Reply"
+   },
+   "upgradeShort": {
+      "message": "Upgrade"
+   },
+   "upgradetoPro": {
+      "message": "Upgrade to Pro"
+   }
+}

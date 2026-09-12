@@ -1,0 +1,368 @@
+{
+   "archiveApplyFilterButton": {
+      "message": "I-filter"
+   },
+   "archiveButtonLabel": {
+      "message": "Archive"
+   },
+   "archiveClearButton": {
+      "message": "Linisin"
+   },
+   "archiveClearConfirmMessage": {
+      "message": "Aalisin nito ang lahat ng napiling pending archive sa IndexedDB. Magpatuloy?"
+   },
+   "archiveClearConfirmTitle": {
+      "message": "Babala"
+   },
+   "archiveClearTooltip": {
+      "message": "Tanggalin sa queue ang lahat ng napiling pending."
+   },
+   "archiveDeleteButton": {
+      "message": "Burahin"
+   },
+   "archiveDeleteTooltip": {
+      "message": "Burahin sa archive mode ang lahat ng napiling pending."
+   },
+   "archiveErrorFileNotReadable": {
+      "message": "Hindi nabasa ang file na \"$1\". Pumili muli. Para sa malalaking ZIP, mag-upload ng .js na file nang direkta."
+   },
+   "archiveErrorInvalidPayload": {
+      "message": "Hindi wasto ang nilalaman ng archive file."
+   },
+   "archiveErrorNoSupportedFiles": {
+      "message": "Walang sinusuportahang archive file sa zip."
+   },
+   "archiveErrorNoValidRecords": {
+      "message": "Walang nakitang wastong archive record."
+   },
+   "archiveErrorUnsupportedFile": {
+      "message": "Hindi sinusuportahang archive file: $1"
+   },
+   "archiveFilterDatePlaceholder": {
+      "message": "Opsyonal"
+   },
+   "archiveFilterFrom": {
+      "message": "Mula"
+   },
+   "archiveFilterKeyword": {
+      "message": "Keyword"
+   },
+   "archiveFilterKeywordPlaceholder": {
+      "message": "Maghanap sa nilalaman"
+   },
+   "archiveFilterTip": {
+      "message": "Ang mga like ay karaniwang sumusuporta lamang sa filter ng keyword."
+   },
+   "archiveFilterTo": {
+      "message": "Hanggang"
+   },
+   "archiveFilterType": {
+      "message": "Uri"
+   },
+   "archiveFiltersSection": {
+      "message": "Mga Filter"
+   },
+   "archiveImportButton": {
+      "message": "Mag-import"
+   },
+   "archiveImportDescription": {
+      "message": "Sumusuporta sa opisyal na zip, tweets.js, at like.js. Kung may mga nakabinbing record na, maaaring pagsamahin o burahin muna bago mag-import."
+   },
+   "archiveImportFailed": {
+      "message": "Nabigo ang pag-import"
+   },
+   "archiveImportModeMerge": {
+      "message": "Pagsamahin"
+   },
+   "archiveImportModeMessage": {
+      "message": "May natukoy na mga nakabinbing record. Burahin muna o isama sa bagong import?"
+   },
+   "archiveImportModeReplace": {
+      "message": "Burahin at I-import"
+   },
+   "archiveImportModeTitle": {
+      "message": "Mode ng Import"
+   },
+   "archiveImportResult": {
+      "message": "Na-import $1, duplicate na nilaktawan $2, di-wasto $3."
+   },
+   "archiveImportSection": {
+      "message": "Mag-import ng File"
+   },
+   "archiveLoaderDeleted": {
+      "message": "Nabura"
+   },
+   "archiveLoaderPending": {
+      "message": "Naka-pending"
+   },
+   "archiveLoaderRecentDeleted": {
+      "message": "Kamakailang Binura"
+   },
+   "archiveLoaderRunning": {
+      "message": "Tumatakbo ang archive mode ng DeleteTweets..."
+   },
+   "archiveLoaderSkipped": {
+      "message": "Nilaktawan"
+   },
+   "archiveLoginReady": {
+      "message": "Naka-login sa X"
+   },
+   "archiveLoginRequired": {
+      "message": "Kailangan mag-login sa X"
+   },
+   "archivePageHeading": {
+      "message": "Tagapamahala ng Archive"
+   },
+   "archivePageSubtitle": {
+      "message": "Mag-load ng kasalukuyang pending na queue, mag-import ng opisyal na archive file, at burahin ang mga napiling item sa archive mode."
+   },
+   "archivePageTitle": {
+      "message": "Tagapamahala ng Archive"
+   },
+   "archivePendingSection": {
+      "message": "Mga Naka-pending"
+   },
+   "archiveProgressExtracting": {
+      "message": "Inilalabas ang $1 ($2/$3)..."
+   },
+   "archiveProgressParsing": {
+      "message": "Sinusuri... $1 MB / $2 MB"
+   },
+   "archiveProgressReadingZip": {
+      "message": "Binabasa ang ZIP directory..."
+   },
+   "archiveRefreshButton": {
+      "message": "I-refresh"
+   },
+   "archiveResetButton": {
+      "message": "I-reset"
+   },
+   "archiveSelectFilteredButton": {
+      "message": "Piliin"
+   },
+   "archiveSelectFilteredSuccess": {
+      "message": "$1 record na napili."
+   },
+   "archiveSelectionUpdateFailed": {
+      "message": "Nabigo ang pag-update ng pinili"
+   },
+   "archiveStartDeleteNeedLogin": {
+      "message": "Mag-login muna sa X."
+   },
+   "archiveStartDeleteNeedSelection": {
+      "message": "Pumili ng pending records bago magsimula."
+   },
+   "archiveSummaryLike": {
+      "message": "Like"
+   },
+   "archiveSummaryPending": {
+      "message": "Nakabinbin"
+   },
+   "archiveSummaryReply": {
+      "message": "Sagot"
+   },
+   "archiveSummaryRetweet": {
+      "message": "Retweet"
+   },
+   "archiveSummarySelected": {
+      "message": "Napili"
+   },
+   "archiveSummaryTweet": {
+      "message": "Tweet"
+   },
+   "archiveTableContent": {
+      "message": "Nilalaman"
+   },
+   "archiveTableCreated": {
+      "message": "Ginawa"
+   },
+   "archiveTableEmpty": {
+      "message": "Walang naka-pending na archive"
+   },
+   "archiveTableEmptyContent": {
+      "message": "(walang laman)"
+   },
+   "archiveTableFails": {
+      "message": "Bigo"
+   },
+   "archiveTablePick": {
+      "message": "Piliin"
+   },
+   "archiveTableTweetId": {
+      "message": "ID ng Tweet"
+   },
+   "archiveTableType": {
+      "message": "Uri"
+   },
+   "archiveUnselectFilteredButton": {
+      "message": "Alisin sa napili"
+   },
+   "archiveUnselectFilteredSuccess": {
+      "message": "$1 record na inalis."
+   },
+   "bindlicense": {
+      "message": "I-link ang lisensya"
+   },
+   "clicklogin": {
+      "message": "Mag-login sa Twitter para magpatuloy"
+   },
+   "deleteAll": {
+      "message": "Burahin lahat"
+   },
+   "deleteByCondition": {
+      "message": "Burahin ayon sa kondisyon"
+   },
+   "exceptionPlaceholder": {
+      "message": "Hindi mabubura ang mga tweet na naglalaman ng mga keyword na ito"
+   },
+   "exceptionSetting": {
+      "message": "Mga setting ng exception"
+   },
+   "exceptionTips": {
+      "message": "Exception (Ipasok ang mga keyword na pinaghihiwalay ng ';')"
+   },
+   "exportBackup": {
+      "message": "I-export ang backup"
+   },
+   "exportDeleted": {
+      "message": "I-export ang mga nabura"
+   },
+   "exportProUser": {
+      "message": "I-export (Pro user)"
+   },
+   "extensionDescription": {
+      "message": "Tanggalin ang tweets/retweets/replies/likes sa isang click"
+   },
+   "filterConditions": {
+      "message": "Mga kondisyon ng filter"
+   },
+   "keywords": {
+      "message": "Mga Keyword"
+   },
+   "licenseShort": {
+      "message": "Lisensya"
+   },
+   "licenseexpired": {
+      "message": "Nag-expire na ang lisensya"
+   },
+   "loadingText": {
+      "message": "Naglo-load..."
+   },
+   "message_bindfail": {
+      "message": "Nabigong i-link"
+   },
+   "message_bindsuccess": {
+      "message": "Matagumpay na na-link"
+   },
+   "message_incorrect_input": {
+      "message": "Maling input"
+   },
+   "message_license_expired": {
+      "message": "Nag-expire na ang lisensyang inilagay mo!"
+   },
+   "message_license_invalid": {
+      "message": "Hindi wasto ang lisensya"
+   },
+   "message_live_daily_limit_reached": {
+      "message": "Ang mga libreng user ay maaaring mag-delete ng hanggang 50 item bawat araw. Naabot na ang limit para sa araw na ito."
+   },
+   "message_networkerror": {
+      "message": "May error sa network. Subukan ulit mamaya"
+   },
+   "message_not_export": {
+      "message": "Walang available na data na mai-export sa ngayon"
+   },
+   "message_notbackup": {
+      "message": "Hindi mo pa na-backup ang iyong mga tweet"
+   },
+   "message_notpermission": {
+      "message": "Walang permission para sa operasyong ito"
+   },
+   "message_right_timeformat": {
+      "message": "Magpasok ng wastong format ng oras, halimbawa: 2023-01-01 00:00:00"
+   },
+   "message_select_search": {
+      "message": "Pakiusap pumili ng hindi bababa sa isang kondisyon sa paghahanap"
+   },
+   "message_select_type_tweet": {
+      "message": "Pakiusap pumili ng uri ng tweets na buburahin"
+   },
+   "message_starttime_endtime": {
+      "message": "Ang oras ng pagsisimula ay dapat mas maaga kaysa sa oras ng pagtatapos"
+   },
+   "message_upgrade_to_pro": {
+      "message": "Mag-upgrade sa Pro account para ma-access ang mga feature na ito"
+   },
+   "optionsLikes": {
+      "message": "Mga Like"
+   },
+   "optionsReplys": {
+      "message": "Mga Tugon"
+   },
+   "optionsRetweets": {
+      "message": "Mga Retweet"
+   },
+   "optionsTweets": {
+      "message": "Mga Tweet"
+   },
+   "pleaseEnterKeywords": {
+      "message": "Pakiusap ipasok ang mga keyword"
+   },
+   "promptCancel": {
+      "message": "Kanselahin"
+   },
+   "promptConfirm": {
+      "message": "Kumpirmahin"
+   },
+   "promptEnterLicense": {
+      "message": "Ipasok ang lisensya"
+   },
+   "promptLicenseTitle": {
+      "message": "Lisensya"
+   },
+   "rebindlicense": {
+      "message": "I-link muli ang lisensya"
+   },
+   "recordTypeLike": {
+      "message": "Like"
+   },
+   "recordTypeReply": {
+      "message": "Sagot"
+   },
+   "recordTypeRetweet": {
+      "message": "Retweet"
+   },
+   "recordTypeTweet": {
+      "message": "Tweet"
+   },
+   "selecttweettype": {
+      "message": "Pumili ng uri ng tweets na buburahin"
+   },
+   "startBackup": {
+      "message": "Mag-backup"
+   },
+   "startDelete": {
+      "message": "Simulan"
+   },
+   "timeFrom": {
+      "message": "Mula"
+   },
+   "timeTo": {
+      "message": "Hanggang"
+   },
+   "tweetInfoDomForward": {
+      "message": "I-forward"
+   },
+   "tweetInfoDomLikes": {
+      "message": "Mga Like"
+   },
+   "tweetInfoDomReply": {
+      "message": "Tugon"
+   },
+   "upgradeShort": {
+      "message": "Mag-upgrade"
+   },
+   "upgradetoPro": {
+      "message": "Mag-upgrade sa Pro"
+   }
+}

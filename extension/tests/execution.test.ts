@@ -1,16 +1,17 @@
 import { describe, expect, it } from 'vitest';
-import { isTargetPage, targetUrl } from '../src/dashboard/execution';
-import type { QueueItem } from '../src/shared/contracts';
-
-const item: QueueItem = { id: 'delete_post:123', targetId: '123', action: 'delete_post', kind: 'tweet', text: '', source: 'archive', selected: true, state: 'pending' };
-describe('execution target navigation', () => {
-  it('uses a validated canonical permalink when available', () => {
-    expect(targetUrl({ ...item, permalink: 'https://x.com/alice/status/123' })).toBe('https://x.com/alice/status/123');
-    expect(targetUrl({ ...item, permalink: 'https://example.com/status/123' })).toBe('https://x.com/i/web/status/123');
+import { abortableDelay, adaptiveDelay } from '../src/dashboard/execution';
+describe('direct request pacing', () => {
+  it('starts between three and five seconds and honors exhausted reset windows', () => {
+    expect(adaptiveDelay(undefined, 1000, 0)).toBe(3000);
+    expect(adaptiveDelay(undefined, 1000, 1)).toBe(5000);
+    expect(adaptiveDelay({ limit: 100, remaining: 1, resetAt: 11000, nextEligibleAt: 0 }, 1000, 0)).toBe(11000);
   });
-  it('only accepts the exact target status page on X', () => {
-    expect(isTargetPage('https://x.com/alice/status/123', '123')).toBe(true);
-    expect(isTargetPage('https://x.com/alice/status/1234', '123')).toBe(false);
-    expect(isTargetPage('https://example.com/alice/status/123', '123')).toBe(false);
+});
+describe('cancellable direct pacing', () => {
+  it('does not complete a delay after cancellation', async () => {
+    const controller = new AbortController();
+    const wait = abortableDelay(1_000, controller.signal);
+    controller.abort();
+    await expect(wait).resolves.toBe(false);
   });
 });

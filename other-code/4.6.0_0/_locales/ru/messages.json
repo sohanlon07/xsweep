@@ -1,0 +1,368 @@
+{
+   "archiveApplyFilterButton": {
+      "message": "Фильтр"
+   },
+   "archiveButtonLabel": {
+      "message": "Архив"
+   },
+   "archiveClearButton": {
+      "message": "Очистить"
+   },
+   "archiveClearConfirmMessage": {
+      "message": "Будут удалены все выбранные записи из IndexedDB. Продолжить?"
+   },
+   "archiveClearConfirmTitle": {
+      "message": "Внимание"
+   },
+   "archiveClearTooltip": {
+      "message": "Удалить все выбранные записи из очереди."
+   },
+   "archiveDeleteButton": {
+      "message": "Удалить"
+   },
+   "archiveDeleteTooltip": {
+      "message": "Удалить все выбранные записи в режиме архива."
+   },
+   "archiveErrorFileNotReadable": {
+      "message": "Не удалось прочитать файл «$1». Выберите файл заново. Для больших ZIP-архивов загрузите .js-файлы напрямую."
+   },
+   "archiveErrorInvalidPayload": {
+      "message": "Содержимое архивного файла недопустимо."
+   },
+   "archiveErrorNoSupportedFiles": {
+      "message": "В zip-архиве не найдено поддерживаемых файлов."
+   },
+   "archiveErrorNoValidRecords": {
+      "message": "Не найдено допустимых архивных записей."
+   },
+   "archiveErrorUnsupportedFile": {
+      "message": "Неподдерживаемый архивный файл: $1"
+   },
+   "archiveFilterDatePlaceholder": {
+      "message": "Необязательно"
+   },
+   "archiveFilterFrom": {
+      "message": "От"
+   },
+   "archiveFilterKeyword": {
+      "message": "Ключевое слово"
+   },
+   "archiveFilterKeywordPlaceholder": {
+      "message": "Поиск по содержимому"
+   },
+   "archiveFilterTip": {
+      "message": "Записи лайков обычно поддерживают только фильтр по ключевым словам."
+   },
+   "archiveFilterTo": {
+      "message": "До"
+   },
+   "archiveFilterType": {
+      "message": "Тип"
+   },
+   "archiveFiltersSection": {
+      "message": "Фильтры"
+   },
+   "archiveImportButton": {
+      "message": "Импорт"
+   },
+   "archiveImportDescription": {
+      "message": "Поддерживает официальный zip, tweets.js и like.js. При наличии ожидающих записей можно объединить их или очистить перед импортом."
+   },
+   "archiveImportFailed": {
+      "message": "Ошибка импорта"
+   },
+   "archiveImportModeMerge": {
+      "message": "Объединить"
+   },
+   "archiveImportModeMessage": {
+      "message": "Обнаружены ожидающие записи. Очистить их или объединить с новым импортом?"
+   },
+   "archiveImportModeReplace": {
+      "message": "Очистить и импортировать"
+   },
+   "archiveImportModeTitle": {
+      "message": "Режим импорта"
+   },
+   "archiveImportResult": {
+      "message": "Импортировано $1, пропущено дубликатов $2, недопустимых $3."
+   },
+   "archiveImportSection": {
+      "message": "Импорт файлов"
+   },
+   "archiveLoaderDeleted": {
+      "message": "Удалено"
+   },
+   "archiveLoaderPending": {
+      "message": "В ожидании"
+   },
+   "archiveLoaderRecentDeleted": {
+      "message": "Недавно удалённые"
+   },
+   "archiveLoaderRunning": {
+      "message": "Режим архива DeleteTweets выполняется..."
+   },
+   "archiveLoaderSkipped": {
+      "message": "Пропущено"
+   },
+   "archiveLoginReady": {
+      "message": "Вход в X выполнен"
+   },
+   "archiveLoginRequired": {
+      "message": "Требуется вход в X"
+   },
+   "archivePageHeading": {
+      "message": "Менеджер архива"
+   },
+   "archivePageSubtitle": {
+      "message": "Загрузка очереди ожидания, импорт официальных архивных файлов и удаление выбранных элементов в режиме архива."
+   },
+   "archivePageTitle": {
+      "message": "Менеджер архива"
+   },
+   "archivePendingSection": {
+      "message": "Записи в ожидании"
+   },
+   "archiveProgressExtracting": {
+      "message": "Извлечение $1 ($2/$3)..."
+   },
+   "archiveProgressParsing": {
+      "message": "Разбор... $1 МБ / $2 МБ"
+   },
+   "archiveProgressReadingZip": {
+      "message": "Чтение каталога ZIP..."
+   },
+   "archiveRefreshButton": {
+      "message": "Обновить"
+   },
+   "archiveResetButton": {
+      "message": "Сброс"
+   },
+   "archiveSelectFilteredButton": {
+      "message": "Выбрать"
+   },
+   "archiveSelectFilteredSuccess": {
+      "message": "Выбрано $1 записей."
+   },
+   "archiveSelectionUpdateFailed": {
+      "message": "Ошибка обновления выбора"
+   },
+   "archiveStartDeleteNeedLogin": {
+      "message": "Сначала войдите в X."
+   },
+   "archiveStartDeleteNeedSelection": {
+      "message": "Перед запуском выберите записи."
+   },
+   "archiveSummaryLike": {
+      "message": "Лайк"
+   },
+   "archiveSummaryPending": {
+      "message": "Ожидают"
+   },
+   "archiveSummaryReply": {
+      "message": "Ответ"
+   },
+   "archiveSummaryRetweet": {
+      "message": "Ретвит"
+   },
+   "archiveSummarySelected": {
+      "message": "Выбрано"
+   },
+   "archiveSummaryTweet": {
+      "message": "Твит"
+   },
+   "archiveTableContent": {
+      "message": "Содержимое"
+   },
+   "archiveTableCreated": {
+      "message": "Создано"
+   },
+   "archiveTableEmpty": {
+      "message": "Нет записей в ожидании"
+   },
+   "archiveTableEmptyContent": {
+      "message": "(пусто)"
+   },
+   "archiveTableFails": {
+      "message": "Ошибки"
+   },
+   "archiveTablePick": {
+      "message": "Выбрать"
+   },
+   "archiveTableTweetId": {
+      "message": "ID твита"
+   },
+   "archiveTableType": {
+      "message": "Тип"
+   },
+   "archiveUnselectFilteredButton": {
+      "message": "Снять выбор"
+   },
+   "archiveUnselectFilteredSuccess": {
+      "message": "Снято выделение с $1 записей."
+   },
+   "bindlicense": {
+      "message": "Привязать лицензию"
+   },
+   "clicklogin": {
+      "message": "Войдите в Twitter, чтобы продолжить"
+   },
+   "deleteAll": {
+      "message": "Удалить всё"
+   },
+   "deleteByCondition": {
+      "message": "Удалить по условию"
+   },
+   "exceptionPlaceholder": {
+      "message": "Твиты с этими ключевыми словами не будут удалены"
+   },
+   "exceptionSetting": {
+      "message": "Настройки исключений"
+   },
+   "exceptionTips": {
+      "message": "Исключения (введите ключевые слова через «;»)"
+   },
+   "exportBackup": {
+      "message": "Экспортировать резервную копию"
+   },
+   "exportDeleted": {
+      "message": "Экспортировать удалённые"
+   },
+   "exportProUser": {
+      "message": "Экспорт (пользователь Pro)"
+   },
+   "extensionDescription": {
+      "message": "Удалить твиты/ретвиты/ответы/лайки одним кликом"
+   },
+   "filterConditions": {
+      "message": "Условия фильтрации"
+   },
+   "keywords": {
+      "message": "Ключевые слова"
+   },
+   "licenseShort": {
+      "message": "Лицензия"
+   },
+   "licenseexpired": {
+      "message": "Срок действия лицензии истёк"
+   },
+   "loadingText": {
+      "message": "Загрузка..."
+   },
+   "message_bindfail": {
+      "message": "Ошибка привязки"
+   },
+   "message_bindsuccess": {
+      "message": "Успешно привязано"
+   },
+   "message_incorrect_input": {
+      "message": "Неверный ввод"
+   },
+   "message_license_expired": {
+      "message": "Срок действия введённой лицензии истёк!"
+   },
+   "message_license_invalid": {
+      "message": "Лицензия недействительна"
+   },
+   "message_live_daily_limit_reached": {
+      "message": "Бесплатные пользователи могут удалять до 50 элементов в день. Лимит на сегодня достигнут."
+   },
+   "message_networkerror": {
+      "message": "Ошибка сети. Попробуйте позже"
+   },
+   "message_not_export": {
+      "message": "В данный момент нет данных для экспорта"
+   },
+   "message_notbackup": {
+      "message": "Вы ещё не создали резервную копию твитов"
+   },
+   "message_notpermission": {
+      "message": "У вас нет прав на эту операцию"
+   },
+   "message_right_timeformat": {
+      "message": "Введите правильный формат времени, например: 2023-01-01 00:00:00"
+   },
+   "message_select_search": {
+      "message": "Пожалуйста, выберите хотя бы одно условие поиска"
+   },
+   "message_select_type_tweet": {
+      "message": "Пожалуйста, выберите тип твитов для удаления"
+   },
+   "message_starttime_endtime": {
+      "message": "Время начала должно быть раньше времени окончания"
+   },
+   "message_upgrade_to_pro": {
+      "message": "Перейдите на Pro-аккаунт, чтобы использовать эти функции"
+   },
+   "optionsLikes": {
+      "message": "Лайки"
+   },
+   "optionsReplys": {
+      "message": "Ответы"
+   },
+   "optionsRetweets": {
+      "message": "Ретвиты"
+   },
+   "optionsTweets": {
+      "message": "Твиты"
+   },
+   "pleaseEnterKeywords": {
+      "message": "Введите ключевые слова"
+   },
+   "promptCancel": {
+      "message": "Отмена"
+   },
+   "promptConfirm": {
+      "message": "Подтвердить"
+   },
+   "promptEnterLicense": {
+      "message": "Введите лицензию"
+   },
+   "promptLicenseTitle": {
+      "message": "Лицензия"
+   },
+   "rebindlicense": {
+      "message": "Перепривязать лицензию"
+   },
+   "recordTypeLike": {
+      "message": "Лайк"
+   },
+   "recordTypeReply": {
+      "message": "Ответ"
+   },
+   "recordTypeRetweet": {
+      "message": "Ретвит"
+   },
+   "recordTypeTweet": {
+      "message": "Твит"
+   },
+   "selecttweettype": {
+      "message": "Выберите тип твитов для удаления"
+   },
+   "startBackup": {
+      "message": "Резервная копия"
+   },
+   "startDelete": {
+      "message": "Начать"
+   },
+   "timeFrom": {
+      "message": "С"
+   },
+   "timeTo": {
+      "message": "По"
+   },
+   "tweetInfoDomForward": {
+      "message": "Переслать"
+   },
+   "tweetInfoDomLikes": {
+      "message": "Лайки"
+   },
+   "tweetInfoDomReply": {
+      "message": "Ответ"
+   },
+   "upgradeShort": {
+      "message": "Обновить"
+   },
+   "upgradetoPro": {
+      "message": "Перейти на Pro"
+   }
+}
