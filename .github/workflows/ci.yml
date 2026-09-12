@@ -37,10 +37,10 @@ jobs:
       run:
         working-directory: extension
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
-          node-version: 22
+          node-version: 24
           cache: npm
           cache-dependency-path: extension/package-lock.json
       - run: npm ci
@@ -48,7 +48,7 @@ jobs:
       - run: npm run validate:package
       - run: npm audit --omit=dev --audit-level=moderate
       - run: cd dist && zip -qr ../xsweep-extension.zip .
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: xsweep-extension
           path: extension/xsweep-extension.zip
@@ -62,7 +62,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
       - name: Select the next patch release
