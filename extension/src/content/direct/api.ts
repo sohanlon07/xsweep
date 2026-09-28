@@ -76,7 +76,7 @@ function findKey(value: unknown, key: string): unknown {
 function findResult(value: unknown): Record<string, unknown> | undefined {
   const object = asObject(value);
   if (!object) return undefined;
-  if (typeof object.rest_id === 'string' || typeof object.__typename === 'string' && /Tombstone|Unavailable/.test(object.__typename)) return object;
+  if (typeof object.rest_id === 'string' || typeof object.__typename === 'string' && /Tombstone|Unavailable|NotFound/.test(object.__typename)) return object;
   for (const child of Object.values(object)) {
     if (Array.isArray(child)) continue;
     const result = findResult(child);
@@ -121,6 +121,11 @@ export function resultUnavailable(result?: Record<string, unknown>): boolean {
   // the target no longer exists. Only an explicit X unavailable result can
   // safely count as already done.
   return !!result && /Tombstone|Unavailable|NotFound/.test(String(result.__typename ?? ''));
+}
+
+export function exactResultMissing(body: Record<string, unknown>): boolean {
+  const tweetResult = asObject(asObject(body.data)?.tweetResult);
+  return !!tweetResult && Object.prototype.hasOwnProperty.call(tweetResult, 'result') && tweetResult.result === null;
 }
 
 function initialFeatureDefaults(root: Document): Record<string, boolean> {
@@ -303,7 +308,7 @@ export class DirectXTransport implements XTransport {
     if (this.clientUuid) headers['x-client-uuid'] = this.clientUuid;
     headers['x-client-transaction-id'] = await this.generator.generate(method, url.pathname);
     let response: Response;
-    try { response = await fetch(url.href, { method, headers, body, credentials: 'include', signal: controller.signal }); }
+    try { response = await fetch(url.href, { method, headers, body, credentials: 'include', cache: method === 'GET' ? 'no-store' : 'default', signal: controller.signal }); }
     catch (error) {
       this.controllers.delete(runId);
       if (controller.signal.aborted) throw new DirectError('The X request was cancelled.', 'cancelled', method === 'POST');
@@ -352,9 +357,9 @@ export class DirectXTransport implements XTransport {
     }
   }
 
-  private async exact(runId: string, targetId: string): Promise<{ result?: Record<string, unknown>; response: GraphResponse }> {
+  private async exact(runId: string, targetId: string): Promise<{ result?: Record<string, unknown>; missing: boolean; response: GraphResponse }> {
     const response = await this.request(runId, 'TweetResultByRestId', { tweetId: targetId, withCommunity: false, includePromotedContent: false, withVoice: false }, 'GET');
-    return { result: findResult(response.data.data), response };
+    return { result: findResult(response.data.data), missing: exactResultMissing(response.data), response };
   }
 
   async inspect(runId: string, targetId: string, action: Action, account: Account): Promise<MutationResult> {
@@ -362,9 +367,9 @@ export class DirectXTransport implements XTransport {
     const current = await this.resolveAccount(runId);
     if (current.id !== account.id || current.handle.toLowerCase() !== account.handle.toLowerCase()) throw new DirectError('The signed-in X account changed.', 'account');
     try {
-      const { result, response } = await this.exact(runId, targetId);
+      const { result, missing, response } = await this.exact(runId, targetId);
       if (action === 'delete_post') {
-        if (resultUnavailable(result)) return { observation: { targetId, state: 'inactive', account: current }, metadataRevision: this.revision, rateLimit: response.rateLimit };
+        if (missing || resultUnavailable(result)) return { observation: { targetId, state: 'inactive', account: current }, metadataRevision: this.revision, rateLimit: response.rateLimit };
         if (!result) return { observation: { targetId, state: 'ambiguous', account: current, detail: 'X did not return the exact target for inspection.' }, metadataRevision: this.revision, rateLimit: response.rateLimit };
         const author = authorHandle(result!);
         const state = author?.toLowerCase() === current.handle.toLowerCase() ? 'active' : 'ambiguous';
@@ -387,11 +392,21 @@ export class DirectXTransport implements XTransport {
     const { operation, variables } = mutationRequest(action, targetId);
     const mutation = await this.request(runId, operation, variables, 'POST');
     if (!validMutationResponse(action, targetId, mutation.data)) throw new DirectError(`X ${operation} response could not be verified.`, 'response', true, mutation.status, mutation.rateLimit);
-    let after: MutationResult;
-    try { after = await this.inspect(runId, targetId, action, account); }
-    catch { throw new DirectError(`X ${operation} was accepted but exact-target readback failed.`, 'verification', true, mutation.status, mutation.rateLimit); }
-    if (after.observation.state !== 'inactive') throw new DirectError(`X ${operation} readback was inconclusive.`, 'verification', true, mutation.status, mutation.rateLimit);
-    return { ...after, operation, httpStatus: mutation.status, dispatched: true, rateLimit: mutation.rateLimit };
+    for (let attempt = 0; attempt < 3; attempt++) {
+      if (attempt) await new Promise(resolve => setTimeout(resolve, 1_500));
+      let after: MutationResult;
+      try { after = await this.inspect(runId, targetId, action, account); }
+      catch { throw new DirectError(`X ${operation} was accepted but exact-target readback failed.`, 'verification', true, mutation.status, mutation.rateLimit); }
+      if (after.observation.state === 'inactive') return { ...after, operation, httpStatus: mutation.status, dispatched: true, rateLimit: mutation.rateLimit };
+      if (after.observation.state !== 'active') break;
+    }
+    if (action === 'delete_post') {
+      try {
+        const page = await chrome.runtime.sendMessage({ type: 'verify-missing-post', runId, targetId, accountHandle: account.handle }) as { ok?: boolean; missing?: boolean };
+        if (page?.ok && page.missing) return { observation: { targetId, state: 'inactive', account }, operation, httpStatus: mutation.status, dispatched: true, metadataRevision: this.revision, rateLimit: mutation.rateLimit };
+      } catch { /* Keep the outcome uncertain if the independent page check fails. */ }
+    }
+    throw new DirectError(`X ${operation} readback was inconclusive.`, 'verification', true, mutation.status, mutation.rateLimit);
   }
 
   async discover(runId: string, category: DiscoveryCategory, account: Account, nextCursor?: string): Promise<DiscoveryResult> {

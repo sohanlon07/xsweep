@@ -6,22 +6,52 @@ function configureSidePanel() {
   return chrome.sidePanel.setPanelBehavior({ openPanelOnActionClick: true }).catch(() => undefined);
 }
 const RUNTIME_HISTORY_MARKER = 'tweet-cleaner-history-initialized';
-async function resetHistoryAfterRuntimeReload() {
+async function interruptRunsAfterRuntimeReload() {
   const marker = await chrome.storage.session.get(RUNTIME_HISTORY_MARKER);
   if (marker[RUNTIME_HISTORY_MARKER]) return;
-  await store.clearHistory();
+  for (const run of await store.all<Run>('runs')) {
+    if (run.state === 'active') await store.put('runs', { ...run, state: 'interrupted' });
+  }
   await chrome.storage.session.set({ [RUNTIME_HISTORY_MARKER]: true });
 }
 // Configure before the first toolbar click when Chrome starts or the extension
 // is reloaded, rather than making the first click do setup work.
 void configureSidePanel();
-void resetHistoryAfterRuntimeReload();
-chrome.runtime.onInstalled.addListener(() => { void (async () => { await store.clearHistory(); await chrome.storage.session.set({ [RUNTIME_HISTORY_MARKER]: true }); await configureSidePanel(); })(); });
+void interruptRunsAfterRuntimeReload();
+chrome.runtime.onInstalled.addListener(() => { void (async () => { await interruptRunsAfterRuntimeReload(); await configureSidePanel(); })(); });
 chrome.runtime.onStartup.addListener(() => { void configureSidePanel(); });
 chrome.runtime.onConnect.addListener(port => { if (port.name !== 'dashboard') return; port.onDisconnect.addListener(() => { void interrupt(); }); });
 chrome.tabs.onRemoved.addListener(tabId => { void (async()=>{const interrupted=interruptRunForClosedTab(await store.activeRun(),tabId);if(interrupted)await store.put('runs',interrupted);})(); });
 async function interrupt(){const r=await store.activeRun();if(r?.state==='active'){try{await chrome.tabs.sendMessage(r.tabId,{type:'cancel',runId:r.id,attemptId:r.activeAttemptId});}catch{/* The stored interruption still prevents new routed work. */}r.state='interrupted';await store.put('runs',r);}}
+async function verifyMissingPost(targetId: string, accountHandle: string): Promise<boolean> {
+  const tab = await chrome.tabs.create({ url: `https://x.com/${accountHandle}/status/${targetId}`, active: false });
+  if (tab.id === undefined) return false;
+  try {
+    for (let attempt = 0; attempt < 8; attempt++) {
+      try {
+        const result = await chrome.tabs.sendMessage(tab.id, { type: 'page-state', targetId, accountHandle }) as { ok?: boolean; missing?: boolean };
+        if (result?.ok && result.missing) return true;
+      } catch { /* The content script may not have loaded yet. */ }
+      await new Promise(resolve => setTimeout(resolve, 1_000));
+    }
+    return false;
+  } finally {
+    await chrome.tabs.remove(tab.id).catch(() => undefined);
+  }
+}
 chrome.runtime.onMessage.addListener((message, sender, respond) => {
+  if (message?.type === 'verify-missing-post') {
+    void (async () => {
+      const { runId, targetId, accountHandle } = message;
+      const run = typeof runId === 'string' ? await store.get<Run>('runs', runId) : undefined;
+      if (!run || sender.id !== chrome.runtime.id || sender.tab?.id !== run.tabId || run.state !== 'active' || run.transport !== 'direct' || typeof targetId !== 'string' || !/^\d+$/.test(targetId) || typeof accountHandle !== 'string' || run.account.handle.toLowerCase() !== accountHandle.toLowerCase()) {
+        respond({ ok: false, missing: false }); return;
+      }
+      const missing = await verifyMissingPost(targetId, accountHandle).catch(() => false);
+      respond({ ok: true, missing });
+    })();
+    return true;
+  }
   if (message?.type === 'fetch-x-static-asset') {
     const asset = allowedXAssetUrl(message.url);
     const senderUrl = sender.tab?.url ?? sender.url ?? '';
