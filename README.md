@@ -105,5 +105,3 @@ npm test
 npm run build
 npm audit --omit=dev
 ```
-
-Safari support and store publishing are separate distribution work; validate ordinary Chrome login and dry-run behaviour before live use.
