@@ -42,11 +42,11 @@ function rangeLabel(range: DiscoveryRange): string {
   return `${range.start ?? 'the earliest available date'} to ${range.end ?? 'today'}`;
 }
 
-export function discoveryCompletionMessage(range: DiscoveryRange, reasons: string[], safePaginationStop: boolean, unsafePaginationStop: boolean, cancelled = false): string {
+export function discoveryCompletionMessage(range: DiscoveryRange, safePaginationStop: boolean, unsafePaginationStop: boolean, cancelled = false): string {
   if (cancelled) return 'Cancelled — partial results retained.';
-  if (unsafePaginationStop) return `Direct discovery stopped at a safety limit; results may be incomplete. ${reasons.join('; ')}`;
-  if (safePaginationStop) return `Direct discovery finished with a safe pagination stop. Results are likely complete for ${rangeLabel(range)}: X stopped advancing its history cursor or repeated a stable page, which normally indicates the end of the available history. Results can still be incomplete if X truncated the response or changed its schema. ${reasons.join('; ')}`;
-  return `Direct discovery finished for ${rangeLabel(range)}. ${reasons.join('; ')}`;
+  if (unsafePaginationStop) return 'Discovery stopped at a safety limit; results may be incomplete.';
+  if (safePaginationStop) return `Discovery likely complete for ${rangeLabel(range)}; X history stopped advancing.`;
+  return `Discovery complete for ${rangeLabel(range)}.`;
 }
 
 function awaitResponse<T>(request: Promise<T>, signal: AbortSignal, description: string): Promise<T> {
@@ -68,7 +68,6 @@ export async function discover(tabId: number, account: Account, categories: Cate
   const cancelRemote = () => { void chrome.tabs.sendMessage(tabId, { type: 'cancel', runId: run.id }).catch(() => undefined); };
   signal.addEventListener('abort', cancelRemote, { once: true });
   const found = new Map<string, QueueItem>();
-  const reasons: string[] = [];
   let completed = false;
   let safePaginationStop = false;
   let unsafePaginationStop = false;
@@ -84,7 +83,6 @@ export async function discover(tabId: number, account: Account, categories: Cate
         if (signal.aborted) break;
         let nextCursor: string | undefined;
         let complete = false;
-        let stopReason = 'API history exhausted';
         let unchangedPages = 0;
         const seenCursors = new Set<string>();
         const seenPageKeys = new Set<string>();
@@ -103,19 +101,15 @@ export async function discover(tabId: number, account: Account, categories: Cate
           unchangedPages = response.items.length > 0 && added === 0 ? unchangedPages + 1 : 0;
           const noProgress = unchangedPages >= 3;
           complete = response.complete || !nextCursor || reachedStart(oldest, range) || repeatedCursor || repeatedPage || noProgress;
-          if (reachedStart(oldest, range)) stopReason = 'start date reached';
-          if (repeatedCursor) { stopReason = 'repeated pagination cursor (X returned the same next cursor after a stable page; this usually means the end of this history)'; safePaginationStop = true; }
-          if (repeatedPage) { stopReason = 'repeated page content (X returned the same page again; this usually means the end of this history)'; safePaginationStop = true; }
-          if (noProgress) { stopReason = 'no new target IDs for three pages (history stopped producing new items)'; safePaginationStop = true; }
-          if (page === MAX_PAGES_PER_CATEGORY - 1) { stopReason = 'safety page limit reached'; unsafePaginationStop = true; }
+          if (repeatedCursor || repeatedPage || noProgress) safePaginationStop = true;
+          if (page === MAX_PAGES_PER_CATEGORY - 1 && !complete) unsafePaginationStop = true;
           run.rateLimit = response.rateLimit;
           await store.put('runs', run);
           await progress([...found.values()], `${category}: page ${page + 1}, ${added ? `${added} matching items added` : 'scanning'}${oldest ? `; reached ${oldest.slice(0, 10)}` : ''}`);
           if (!complete) await delay();
         }
-        reasons.push(`${category}: ${signal.aborted ? 'cancelled' : stopReason}`);
     }
-    await progress([...found.values()], discoveryCompletionMessage(range, reasons, safePaginationStop, unsafePaginationStop, signal.aborted));
+    await progress([...found.values()], discoveryCompletionMessage(range, safePaginationStop, unsafePaginationStop, signal.aborted));
     completed = !signal.aborted;
   } finally {
     signal.removeEventListener('abort', cancelRemote);

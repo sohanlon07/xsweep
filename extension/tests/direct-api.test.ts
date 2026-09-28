@@ -1,6 +1,6 @@
 // @vitest-environment jsdom
 import { describe, expect, it } from 'vitest';
-import { mutationRequest, nonJsonResponseError, parseTimeline, readCookie, resultUnavailable, timelinePageKey, validMutationResponse, validSessionHeader } from '../src/content/direct/api';
+import { exactResultMissing, mutationRequest, nonJsonResponseError, parseTimeline, readCookie, resultUnavailable, timelinePageKey, validMutationResponse, validSessionHeader } from '../src/content/direct/api';
 
 const account = { id: '42', handle: 'alice' };
 const entry = (result: object) => ({ data: { user: { result: { timeline: { timeline: { instructions: [{ entries: [{ entryId: 'tweet-1', content: { itemContent: { tweet_results: { result } } } }] }] } } } } } });
@@ -33,6 +33,10 @@ describe('direct X request boundaries', () => {
   it('does not mistake a missing exact-post result for a deleted target', () => {
     expect(resultUnavailable(undefined)).toBe(false);
     expect(resultUnavailable({ __typename: 'TweetTombstone' })).toBe(true);
+    expect(resultUnavailable({ __typename: 'TweetNotFound' })).toBe(true);
+    expect(exactResultMissing({ data: { tweetResult: { result: null } } })).toBe(true);
+    expect(exactResultMissing({ data: { tweetResult: {} } })).toBe(false);
+    expect(exactResultMissing({ data: {} })).toBe(false);
   });
 
   it('turns non-JSON X pages into safe, actionable diagnostics', () => {

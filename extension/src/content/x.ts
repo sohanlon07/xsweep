@@ -2,6 +2,7 @@ import { isMessage, type ContentResponse } from '../shared/messages';
 import type { Account } from '../shared/contracts';
 import { signedInHandle } from './discovery';
 import { DirectXTransport, directError } from './direct/api';
+import { pageIndicatesMissingPost } from './direct/page-check';
 
 const direct = new DirectXTransport(document);
 
@@ -43,6 +44,11 @@ chrome.runtime.onMessage.addListener((raw, sender, respond) => {
   if (raw.type === 'cancel') {
     direct.cancel(raw.runId);
     respond({ ok: true, cancelled: true } satisfies ContentResponse); return;
+  }
+  if (raw.type === 'page-state') {
+    const accountMatches = signedInHandle(document)?.toLowerCase() === raw.accountHandle.toLowerCase();
+    const missing = !!accountMatches && pageIndicatesMissingPost(document, raw.targetId);
+    respond({ ok: true, missing } satisfies ContentResponse); return;
   }
   void (async () => {
     try {
